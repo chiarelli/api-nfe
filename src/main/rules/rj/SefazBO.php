@@ -22,7 +22,6 @@
 namespace NetChiarelli\Api_NFe\rules\rj;
 
 use NetChiarelli\Api_NFe\exception\ApiException;
-use NetChiarelli\Api_NFe\exception\ControllerException;
 use NetChiarelli\Api_NFe\exception\ResourceInaccessible;
 use NetChiarelli\Api_NFe\exception\RulesException;
 use NetChiarelli\Api_NFe\model\rj\Destinatario;

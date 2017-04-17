@@ -54,7 +54,7 @@ class Params {
         /**
          * @todo Ativar o código abaixo quando implementar $this->setMultipart() metodo.
          */
-//        $this->setMultipart($multipartList);
+        $this->setMultipart($multipartList);
         $this->setJsonParam($jsonParamList);
     }
 
