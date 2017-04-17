@@ -73,7 +73,7 @@ class Postmon {
         $file = self::PATH_CACHE . "/{$cep}.json";
         
         if( ! file_exists(self::PATH_CACHE)) {            
-            mkdir(self::PATH_CACHE, 0775, true);
+            @mkdir(self::PATH_CACHE, 0775, true);
         }
         
         if( ! file_exists($file) || ! is_readable($file) ) {
