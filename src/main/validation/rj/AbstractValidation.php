@@ -21,15 +21,16 @@
 namespace NetChiarelli\Api_NFe\validation\rj;
 
 use NetChiarelli\Api_NFe\assert\Assertion;
+use NetChiarelli\Api_NFe\assert\Assertions;
+use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\exception\ApiException;
 use NetChiarelli\Api_NFe\exception\RulesException;
 use NetChiarelli\Api_NFe\model\rj\IModel;
 use NetChiarelli\Api_NFe\util\Postmon;
-use NetChiarelli\Api_NFe\util\StringUtil;
-use NetChiarelli\Api_NFe\assert\Assertions;
-use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\util\Result;
 use NetChiarelli\Api_NFe\util\Severity;
+use NetChiarelli\Api_NFe\util\StringUtil;
+use NetChiarelli\Api_NFe\validation\IStaticValidation;
 
 /**
  * Description of AbstractBean
@@ -40,10 +41,7 @@ use NetChiarelli\Api_NFe\util\Severity;
  *
  * @author raphael
  */
-abstract class AbstractValidation {
-    
-    static abstract function isValid($instance);
-    
+abstract class AbstractValidation implements IStaticValidation {   
     
     static function checkNomePessoa($value) {        
         return AssertionSoft::betweenLength(
