@@ -25,7 +25,7 @@ use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
 use NetChiarelli\Api_NFe\model\rj\TipoRemetenteEnum;
 use NetChiarelli\Api_NFe\util\Result;
-use NetChiarelli\Api_NFe\util\ResultNull;
+use NetChiarelli\Api_NFe\util\NullResult;
 use NetChiarelli\Api_NFe\util\Severity;
 
 /**
@@ -66,7 +66,7 @@ class RemetenteValidation extends AbstractValidation {
         
         $queryArray = $remente->toArrayQuery();
         
-        $result = new ResultNull();
+        $result = new NullResult();
         
         $result->add( static::checkTipoSelecionado($queryArray['tipoRemetenteSelecionado']) );
         unset($queryArray['tipoRemetenteSelecionado']); 

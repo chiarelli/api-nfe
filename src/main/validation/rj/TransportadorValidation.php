@@ -23,7 +23,7 @@ namespace NetChiarelli\Api_NFe\validation\rj;
 use NetChiarelli\Api_NFe\assert\Assertion;
 use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\model\rj\Transportador;
-use NetChiarelli\Api_NFe\util\ResultNull;
+use NetChiarelli\Api_NFe\util\NullResult;
 
 /**
  * Description of TransportadorValidation
@@ -58,7 +58,7 @@ class TransportadorValidation extends AbstractValidation {
         
         $query = $transportador->toArrayQuery();
         
-        $result = new ResultNull();
+        $result = new NullResult();
         
         $modalidade = $query['transportadorModalidade'];
         $result->add( static::checkModalidade($modalidade) );
@@ -83,7 +83,7 @@ class TransportadorValidation extends AbstractValidation {
     }
     
     public static function checkSemFrete(array $query) {
-        $result = new ResultNull();
+        $result = new NullResult();
          
         $result->add( AssertionSoft::eq(count($query), 2) );
         $keys = array_keys($query);       

@@ -23,7 +23,7 @@ namespace NetChiarelli\Api_NFe\util;
 use NetChiarelli\Api_NFe\util\Result;
 
 /**
- * Description of ResultNull
+ * Description of NullResult
  * 
  * @todo Futuramente ao refatorar o package NetChiarelli\Api_NFe\api para 
  * um projeto independente, não esquecer de desacoplar NetChiarelli\Api_NFe\util\Result e 
@@ -31,7 +31,7 @@ use NetChiarelli\Api_NFe\util\Result;
  *
  * @author raphael
  */
-class ResultNull extends Result {
+class NullResult extends Result {
     
     protected $calledAdd = false;
 
