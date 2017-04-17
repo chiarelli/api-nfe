@@ -1,0 +1,6 @@
+
+// Inputs do form Sefaz-RIO que devem ser tratados em Service
+
+&regimeTributario=1
+&remetenteFinalidade=1 // Para NFA-e de saida, sem ser de devolução.
+&javax.faces.ViewState=1699242791680329887:-806937353571480868
