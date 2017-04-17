@@ -21,9 +21,9 @@
 namespace NetChiarelli\Api_NFe\validation\rj;
 
 use NetChiarelli\Api_NFe\assert\Assertion;
+use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\model\rj\Transportador;
 use NetChiarelli\Api_NFe\util\ResultNull;
-use NetChiarelli\Api_NFe\assert\AssertionSoft;
 
 /**
  * Description of TransportadorValidation

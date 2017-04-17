@@ -21,13 +21,11 @@
 namespace NetChiarelli\Api_NFe\validation\rj;
 
 use NetChiarelli\Api_NFe\assert\Assertion;
-use NetChiarelli\Api_NFe\exception\RulesException;
-use NetChiarelli\Api_NFe\model\rj\OperacaoNatureza;
+use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
 use NetChiarelli\Api_NFe\model\rj\TipoRemetenteEnum;
-use NetChiarelli\Api_NFe\util\ResultNull;
-use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\util\Result;
+use NetChiarelli\Api_NFe\util\ResultNull;
 use NetChiarelli\Api_NFe\util\Severity;
 
 /**

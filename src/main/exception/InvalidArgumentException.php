@@ -21,6 +21,7 @@
 namespace NetChiarelli\Api_NFe\exception;
 
 use Assert\AssertionFailedException;
+use NetChiarelli\Api_NFe\util\Result;
 
 /**
  * Description of InvalidArgumentationException
