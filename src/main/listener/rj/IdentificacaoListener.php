@@ -135,17 +135,16 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
 //        echo '</pre>';
 //        die('DIE params');
 
-        if ($headersFaces) {
-            $headers = HeadersHtmlFaces::facesSendRequests();
-        } else {
-            $headers = HeadersHtmlFaces::formSubmit();
-            
         echo '</pre>';
         echo '<hr><h3>Inputs form SUBMIT POST:</h3>';
         var_dump($this->formAction);    echo PHP_EOL;        
         var_dump($params);        echo PHP_EOL;              
         echo '</pre>';
         
+        if ($headersFaces) {
+            $headers = HeadersHtmlFaces::facesSendRequests();
+        } else {
+            $headers = HeadersHtmlFaces::formSubmit();
         }
 
         $conn->send(

@@ -185,22 +185,22 @@ class Transportador implements IModel {
         
         return [
             'transportadorModalidade' => $modalidade,// 1
-            'ransportadorTipoDoc' => $doc->getTipoDoc(), // CNPJ
-            'ransportadorNumDoc' => $numDoc, // 34.028.316/0027-42
-            'ransportadorIE' => $this->getInscEst(),
-            'ransportadorRazaoSocial' => $this->getNome(), // Empresa Brasileira de Correios e Telégrafos
-            'ransportadorEndereco' => $fullAddress, //Av Pref Rolando Moreira, 336
-            'ransportadorUF' => $endereco->getUf(), // AC
-            'ransportadorMunicipio' => $endereco->getCodeIbgeMunicipio(), // 1200104
-            'ranspPlaca' => null,
+            'transportadorTipoDoc' => $doc->getTipoDoc(), // CNPJ
+            'transportadorNumDoc' => $numDoc, // 34.028.316/0027-42
+            'transportadorIE' => $this->getInscEst(),
+            'transportadorRazaoSocial' => $this->getNome(), // Empresa Brasileira de Correios e Telégrafos
+            'transportadorEndereco' => $fullAddress, //Av Pref Rolando Moreira, 336
+            'transportadorUF' => $endereco->getUf() ?: 'org.jboss.seam.ui.NoSelectionConverter.noSelectionValue', // AC
+            'transportadorMunicipio' => $endereco->getCodeIbgeMunicipio(), // 1200104
+            'transpPlaca' => null,
             'ufVeiculo' => 'org.jboss.seam.ui.NoSelectionConverter.noSelectionValue', // org.jboss.seam.ui.NoSelectionConverter.noSelectionValue
-            'ranspQuantidade' => null,
-            'ranspEspecie' => null,
-            'ranspPesoBruto' => null,
-            'ranspPesoLiquido' => null,
-            'ranspNumVols' => null,
-            'ranspMarca' => null,
-            'importacaoInfoComplementar' => $this->getInfComplementar(),
+            'transpQuantidade' => null,
+            'transpEspecie' => null,
+            'transpPesoBruto' => null,
+            'transpPesoLiquido' => null,
+            'transpNumVols' => null,
+            'transpMarca' => null,
+            'importacaoInfoComplementar' => $this->getInfComplementar() ?: NULL,
         ];
     }
     

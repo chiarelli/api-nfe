@@ -68,7 +68,7 @@ class TransportadorValidation extends AbstractValidation {
             
         } else {
             
-            $result->add( static::checkNomePessoa($query['ransportadorRazaoSocial']) );
+            $result->add( static::checkNomePessoa($query['transportadorRazaoSocial']) );
             
             $result->add( static::checkCEP($transportador) );
              

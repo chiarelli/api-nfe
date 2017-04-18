@@ -111,7 +111,7 @@ class SubmitFormIdentificacao {
             'javax.faces.ViewState' => '',
         ];
         
-        return array_merge( $array, 
+        return array_merge( $array,
                 $this->remetente->toArrayQuery(), 
                 $this->destinatario->toArrayQuery(), 
                 $this->transportador->toArrayQuery()
