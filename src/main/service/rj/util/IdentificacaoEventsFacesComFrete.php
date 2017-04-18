@@ -6,30 +6,36 @@
  * and open the template in the editor.
  */
 
-namespace NetChiarelli\Api_NFe\service\rj;
+namespace NetChiarelli\Api_NFe\service\rj\util;
 
 /**
  * Description of IdentificacaoEventsFacesComFrete
  *
  * @author raphael
  */
-class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
-    
+class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces implements IOrderEvents {
+    use TraitIdentificacaoEventsFacesComFrete;
+
+    /**
+     * Retorna um array representado a ordem que deve ser feita a invocação dos 
+     * métodos que representam os eventos do formulário faces.
+     * 
+     * @return array Contendo a ordem que deve ser executado os métodos.
+     */
     static function getOrder() {
         $order = parent::getOrder();
-        
-        $oObject = new \ReflectionClass(self::class);
+
+        $oObject = new \ReflectionClass(TraitIdentificacaoEventsFacesComFrete::class);
         foreach ($oObject->getMethods() as $method) {
-            if($method->name == '__construct'
-                    || $method->name == 'getOrder') {
-                continue;
-            }
-            
             $order[] = $method->name;
         }
-        
+
         return $order;
     }
+
+}
+
+trait TraitIdentificacaoEventsFacesComFrete {
 
     function transportadorTipoDoc() {
         $query = [
@@ -43,8 +49,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
     function transportadorNumDoc() {
@@ -59,8 +65,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
     function transportadorRazaoSocial() {
@@ -75,8 +81,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true"',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
     function transportadorEndereco() {
@@ -91,8 +97,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
     function transportadorUF() {
@@ -107,8 +113,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
     function transportadorMunicipio() {
@@ -123,8 +129,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
     function importacaoInfoComplementar() {
@@ -139,8 +145,8 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces {
             'AJAX:EVENTS_COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
-        return array_merge($this->transportador->toArrayQuery() ,$query);
+
+        return array_merge($this->transportador->toArrayQuery(), $query);
     }
 
 }

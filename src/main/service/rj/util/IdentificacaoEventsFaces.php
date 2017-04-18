@@ -1,6 +1,6 @@
 <?php
 
-namespace NetChiarelli\Api_NFe\service\rj;
+namespace NetChiarelli\Api_NFe\service\rj\util;
 
 use NetChiarelli\Api_NFe\model\rj\Destinatario;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
@@ -11,27 +11,26 @@ use NetChiarelli\Api_NFe\model\rj\Transportador;
  *
  * @author raphael
  */
-class IdentificacaoEventsFaces {
-    
+class IdentificacaoEventsFaces implements IOrderEvents {
+    use TraitIdentificacaoEvents;
+
     /** @var Remetente */
     protected $remetente;
-    
+
     /** @var Destinatario */
     protected $destinatario;
 
     /** @var Transportador */
     protected $transportador;
-    
+
     public function __construct(
-            Remetente $remetente, 
-            Destinatario $destinatario, 
-            Transportador $transportador = null
-                                ) {
+    Remetente $remetente, Destinatario $destinatario, Transportador $transportador = null
+    ) {
         $this->remetente = $remetente;
         $this->destinatario = $destinatario;
         $this->transportador = $transportador ?: Transportador::getInstanceSemFrete();
     }
-    
+
     /**
      * Retorna um array representado a ordem que deve ser feita a invocação dos 
      * métodos que representam os eventos do formulário faces.
@@ -40,20 +39,20 @@ class IdentificacaoEventsFaces {
      */
     static function getOrder() {
         $order = [];
-        
-        $oObject = new \ReflectionClass(self::class);
-        foreach ($oObject->getMethods() as $method) {
-            if($method->name == '__construct'
-                    || $method->name == 'getOrder') {
-                continue;
-            }
-            
+
+        $oClass = new \ReflectionClass(TraitIdentificacaoEvents::class);
+
+        foreach ($oClass->getMethods() as $method) {
             $order[] = $method->name;
         }
-        
+
         return $order;
     }
-    
+
+}
+
+trait TraitIdentificacaoEvents {
+
     function tipoRemetenteSelecionado() {
         $array = [
             'javax.faces.source' => 'tipoRemetenteSelecionado',
@@ -66,7 +65,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -82,7 +81,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -98,7 +97,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -114,12 +113,12 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
     function remetenteCEP() {
-         $array = [
+        $array = [
             'javax.faces.source' => 'remetenteCEP',
             'javax.faces.partial.event' => 'change',
             'javax.faces.partial.execute' => 'remetenteCEP @component',
@@ -130,7 +129,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-         
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -146,7 +145,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -162,7 +161,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -178,7 +177,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -194,7 +193,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -210,14 +209,14 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
     function remetenteTipoNaturezaOperacao() {
         $operacao = $this->remetente->getOperacao();
         $nat = $operacao->getTipoNat()->value()[1];
-        
+
         $array = [
             'javax.faces.source' => 'remetenteTipoNaturezaOperacao:' . ($nat == 'SAIDA' ? '1' : '0'),
             'javax.faces.partial.event' => 'click',
@@ -229,7 +228,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -245,7 +244,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->remetente->toArrayQuery(), $array);
     }
 
@@ -261,7 +260,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -277,7 +276,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -293,7 +292,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -309,7 +308,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -325,7 +324,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -341,7 +340,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -357,7 +356,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -373,7 +372,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -389,7 +388,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -405,7 +404,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->destinatario->toArrayQuery(), $array);
     }
 
@@ -421,7 +420,7 @@ class IdentificacaoEventsFaces {
             'AJAX:EVENTS.COUNT' => '1',
             'javax.faces.partial.ajax' => 'true',
         ];
-        
+
         return array_merge($this->transportador->toArrayQuery(), $array);
     }
 

@@ -28,10 +28,11 @@ use NetChiarelli\Api_NFe\model\rj\Transportador;
 use NetChiarelli\Api_NFe\model\rj\TransportadorModalidadeEnum;
 use NetChiarelli\Api_NFe\service\Connection;
 use NetChiarelli\Api_NFe\service\Params;
-use NetChiarelli\Api_NFe\service\rj\HeadersHtmlFaces;
-use NetChiarelli\Api_NFe\service\rj\IdentificacaoEventsFaces;
-use NetChiarelli\Api_NFe\service\rj\IdentificacaoEventsFacesComFrete;
-use NetChiarelli\Api_NFe\service\rj\SubmitFormIdentificacao;
+use NetChiarelli\Api_NFe\service\rj\util\HeadersHtmlFaces;
+use NetChiarelli\Api_NFe\service\rj\util\IdentificacaoEventsFaces;
+use NetChiarelli\Api_NFe\service\rj\util\IdentificacaoEventsFacesComFrete;
+use NetChiarelli\Api_NFe\service\rj\util\IOrderEvents;
+use NetChiarelli\Api_NFe\service\rj\util\SubmitFormIdentificacao;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\DomCrawler\Crawler;
@@ -48,29 +49,45 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
     /** @var Connection */
     protected $conn;
     
-    /** @var IdentificacaoEventsFaces */
+    /** @var IOrderEvents */
     protected $FacesEvents;
     
     /** @var SubmitFormIdentificacao */
     protected $SubmitForm;
-
+    
+    /** @var string */
     protected $currentViewState;
     
+    /** @var string */
     protected $last_cid;
     
-
-    public function __construct(Connection $conn, Remetente $remetente, Destinatario $destinatario, Transportador $transportador = null) {
+    /**
+     * 
+     * @param Connection $conn
+     * @param Remetente $remetente
+     * @param Destinatario $destinatario
+     * @param Transportador $transportador
+     */
+    public function __construct(
+            Connection $conn, 
+            Remetente $remetente, 
+            Destinatario $destinatario, 
+            Transportador $transportador = null ) {
         parent::__construct();
         
         $conn->setListener($this);
         
         $modalidade = $transportador->getModalidade()->name();
         
-        if($modalidade === TransportadorModalidadeEnum::SEM_FRETE) {
-            $facesEventsClass = IdentificacaoEventsFaces::class;
-        } else {
-            $facesEventsClass = IdentificacaoEventsFacesComFrete::class;            
-        }
+        $facesEventsClass = ($modalidade === TransportadorModalidadeEnum::SEM_FRETE) 
+                ? IdentificacaoEventsFaces::class 
+                : IdentificacaoEventsFacesComFrete::class;
+        
+//        if($modalidade === TransportadorModalidadeEnum::SEM_FRETE) {
+//            $facesEventsClass = IdentificacaoEventsFaces::class;
+//        } else {
+//            $facesEventsClass = IdentificacaoEventsFacesComFrete::class;            
+//        }
         
         $this->conn = $conn;
         $this->FacesEvents = new $facesEventsClass($remetente, $destinatario, $transportador);
@@ -88,17 +105,13 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
 
         $this->formAction = static::URI_IDENTIFICACAO . '?cid=1';
         
-        $FacesEvents = $this->FacesEvents;
+        $facesEvents = $this->FacesEvents;
 
-        $oObject = new \ReflectionObject($FacesEvents);
+        $order = $facesEvents->getOrder();
 
-        foreach ($oObject->getMethods() as $method) {
-            if($method->name == '__construct') {
-                continue;
-            }
-            
-            echo '<h2 style="text-align: center;">' . $method->name . '</h2>';
-            $this->shoot( $FacesEvents->{$method->name}() );
+        foreach ($order as $event) {            
+            echo '<h2 style="text-align: center;">' . $event . '</h2>';
+            $this->shoot( $facesEvents->{$event}() );
         }
         
         $this->submitForm();

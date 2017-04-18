@@ -18,7 +18,8 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-namespace NetChiarelli\Api_NFe\service\rj;
+namespace NetChiarelli\Api_NFe\service\rj\util;
+
 
 /**
  * Description of HeadersEventsFaces

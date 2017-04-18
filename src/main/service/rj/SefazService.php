@@ -109,7 +109,7 @@ class SefazService {
         $this->sendIdentificacao();
     }
 
-    /*protected*/ function sendIdentificacao() {
+    protected function sendIdentificacao() {
         $conn = $this->conn;          
 
         $listener = new IdentificacaoListener( $conn, 

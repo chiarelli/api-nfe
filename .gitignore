@@ -1,5 +1,6 @@
 
 ### Project ###
+index.php
 src/draft
 src/tests
 src/main/resource/cache/*
