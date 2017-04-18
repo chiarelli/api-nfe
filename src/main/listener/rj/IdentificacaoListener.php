@@ -25,10 +25,12 @@ use NetChiarelli\Api_NFe\listener\AbstractListenerGuzzleHttp;
 use NetChiarelli\Api_NFe\model\rj\Destinatario;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
 use NetChiarelli\Api_NFe\model\rj\Transportador;
+use NetChiarelli\Api_NFe\model\rj\TransportadorModalidadeEnum;
 use NetChiarelli\Api_NFe\service\Connection;
 use NetChiarelli\Api_NFe\service\Params;
 use NetChiarelli\Api_NFe\service\rj\HeadersHtmlFaces;
 use NetChiarelli\Api_NFe\service\rj\IdentificacaoEventsFaces;
+use NetChiarelli\Api_NFe\service\rj\IdentificacaoEventsFacesComFrete;
 use NetChiarelli\Api_NFe\service\rj\SubmitFormIdentificacao;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -62,8 +64,16 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
         
         $conn->setListener($this);
         
+        $modalidade = $transportador->getModalidade()->name();
+        
+        if($modalidade === TransportadorModalidadeEnum::SEM_FRETE) {
+            $facesEventsClass = IdentificacaoEventsFaces::class;
+        } else {
+            $facesEventsClass = IdentificacaoEventsFacesComFrete::class;            
+        }
+        
         $this->conn = $conn;
-        $this->FacesEvents = new IdentificacaoEventsFaces($remetente, $destinatario, $transportador);
+        $this->FacesEvents = new $facesEventsClass($remetente, $destinatario, $transportador);
         $this->SubmitForm = new SubmitFormIdentificacao($remetente, $destinatario, $transportador);
     }
     

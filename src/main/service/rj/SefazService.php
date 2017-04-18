@@ -96,7 +96,7 @@ class SefazService {
      * @return \DOMDocument Contendo o xml da NFEa
      * @throws ServiceException qualquer exceção é relançada.
      */
-    function getXml(
+    function processIdentificacao(
             Remetente $remetente, 
             Destinatario $destinatario, 
             Transportador $transportador = null
@@ -106,10 +106,10 @@ class SefazService {
         $this->destinatario = $destinatario;
         $this->transportador = $transportador;
         
-        $this->processIdentificacaoPage();
+        $this->sendIdentificacao();
     }
 
-    /*protected*/ function processIdentificacaoPage() {
+    /*protected*/ function sendIdentificacao() {
         $conn = $this->conn;          
 
         $listener = new IdentificacaoListener( $conn, 
@@ -117,7 +117,8 @@ class SefazService {
                 $this->destinatario, 
                 $this->transportador
         );
-
+        
+        // TODO remover essas linhas abaixo
         $listener->processPage();
 
         $conn->freezeListener();            

@@ -31,7 +31,29 @@ class IdentificacaoEventsFaces {
         $this->destinatario = $destinatario;
         $this->transportador = $transportador ?: Transportador::getInstanceSemFrete();
     }
-
+    
+    /**
+     * Retorna um array representado a ordem que deve ser feita a invocação dos 
+     * métodos que representam os eventos do formulário faces.
+     * 
+     * @return array Contendo a ordem que deve ser executado os métodos.
+     */
+    static function getOrder() {
+        $order = [];
+        
+        $oObject = new \ReflectionClass(self::class);
+        foreach ($oObject->getMethods() as $method) {
+            if($method->name == '__construct'
+                    || $method->name == 'getOrder') {
+                continue;
+            }
+            
+            $order[] = $method->name;
+        }
+        
+        return $order;
+    }
+    
     function tipoRemetenteSelecionado() {
         $array = [
             'javax.faces.source' => 'tipoRemetenteSelecionado',
