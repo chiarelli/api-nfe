@@ -24,6 +24,7 @@ use GuzzleHttp\Cookie\CookieJar;
 use NetChiarelli\Api_NFe\exception\ServiceException;
 use NetChiarelli\Api_NFe\listener\rj\IdentificacaoListener;
 use NetChiarelli\Api_NFe\model\rj\Destinatario;
+use NetChiarelli\Api_NFe\model\rj\Pedido;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
 use NetChiarelli\Api_NFe\model\rj\Transportador;
 use NetChiarelli\Api_NFe\service\Connection;
@@ -96,7 +97,7 @@ class SefazService {
      * @return \DOMDocument Contendo o xml da NFEa
      * @throws ServiceException qualquer exceção é relançada.
      */
-    function processIdentificacao(
+    function processIdentificacaoPage(
             Remetente $remetente, 
             Destinatario $destinatario, 
             Transportador $transportador = null
@@ -127,6 +128,10 @@ class SefazService {
         $resp = $conn->sendFlexible('/sefaz-dfe-nfae/paginas/produtos.faces', 'GET', new Params($listener->getLast_cid()));
 
         echo $resp->getBody()->getContents();
+    }
+    
+    function processProdutosPage(Pedido $pedido) {
+        
     }
 
 }

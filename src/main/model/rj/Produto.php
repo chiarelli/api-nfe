@@ -20,6 +20,9 @@
 
 namespace NetChiarelli\Api_NFe\model\rj;
 
+use Che\Math\Decimal\Decimal;
+use NetChiarelli\Api_NFe\service\rj\util\Unidade;
+
 /**
  * Description of Produtos
  *
@@ -28,5 +31,31 @@ namespace NetChiarelli\Api_NFe\model\rj;
  * @author raphael
  */
 class Produto {
-    //put your code here
+    
+    /** @var string */
+    protected $codigo;
+    
+    /** @var string */
+    protected $descricao;
+    
+    /** @var integer */
+    protected $qtd;
+    
+    /** @var Decimal */
+    protected $valor;
+    
+    /** @var Decimal */
+    protected $desconto;
+    
+    /** @var Decimal */
+    protected $outrasDesp;
+    
+    /** @var Decimal */
+    protected $seguro;
+
+    protected $NCM;
+    
+    /** @var Unidade */
+    protected $Unid;
+    
 }

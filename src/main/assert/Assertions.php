@@ -193,10 +193,6 @@ class Assertions {
      */
     static function valuesArrayIsInstanceOf(array $arrayANDclassName) {
         
-        if(empty($arrayANDclassName)) {
-            return FALSE;
-        }
-        
         $array = $arrayANDclassName[0];
         $className = $arrayANDclassName[1];
         

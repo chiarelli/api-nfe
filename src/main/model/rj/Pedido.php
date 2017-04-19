@@ -20,9 +20,10 @@
 
 namespace NetChiarelli\Api_NFe\model\rj;
 
+use Che\Math\Decimal\Decimal;
 use NetChiarelli\Api_NFe\assert\Assertion;
-use NetChiarelli\Api_NFe\exception\InvalidArgumentException;
 use NetChiarelli\Api_NFe\assert\Assertions;
+use NetChiarelli\Api_NFe\exception\InvalidArgumentException;
 
 /**
  * Description of Pedido
@@ -33,26 +34,26 @@ use NetChiarelli\Api_NFe\assert\Assertions;
  */
 class Pedido {
     
+    /** @var mixed */
+    protected $id;
+    
+    /** @var Decimal */
+    protected $valorFrete;
+
     /** @var Produto[] */
     protected $ProdutoList;
     
     /**
      * 
-     * @param array $array
+     * @param Produto[] $produtoList
      * 
      * @throws InvalidArgumentException
      */
-    public function __construct(array $produtoList = NULL) {
-        
-        if(is_null($produtoList)) {
-            $produtoList = array();
-        } else {            
-            $this->requiredArrayOfProduto($produtoList);
-        }
+    public function __construct(array $produtoList = []) {
+        $this->requiredArrayOfProduto($produtoList);
         
         $this->ProdutoList = $produtoList;
     }
-
     
     public function addProduto(Produto $produto) {
         $this->ProdutoList[] = $produto;
@@ -64,7 +65,7 @@ class Pedido {
 
     /**
      * 
-     * @param array $array
+     * @param array $ProdutoList
      * 
      * @throws InvalidArgumentException
      */
@@ -82,13 +83,13 @@ class Pedido {
      * 
      * @throws InvalidArgumentException
      */
-    protected final function requiredArrayOfProduto($array) {
+    protected final function requiredArrayOfProduto(array $array) {
         $className = Produto::class;
         // Verifica se o array é do tipo Produto
         Assertion::satisfy(
             array($array, Produto::class), 
             array(Assertions::class, 'valuesArrayIsInstanceOf'),
-            "This array does not contain values of type {$className}."
+            __("This array does not contain values of type {$className}.", 'api-nfae')
         );        
     }
 

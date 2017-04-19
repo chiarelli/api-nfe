@@ -15,7 +15,8 @@
         "hassankhan/config": "^0.10.0",
         "guzzlehttp/guzzle": "^6.2",
         "symfony/dom-crawler": "^3.2",
-        "picqer/php-barcode-generator": "^0.2.1"
+        "picqer/php-barcode-generator": "^0.2.1",
+        "che/decimal": "^0.1.3"
     },
     "require-dev": {
         "codeception/codeception": "dev-master",
