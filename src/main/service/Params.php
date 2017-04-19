@@ -54,7 +54,7 @@ class Params {
         /**
          * @todo Ativar o código abaixo quando implementar $this->setMultipart() metodo.
          */
-        $this->setMultipart($multipartList);
+//        $this->setMultipart($multipartList);
         $this->setJsonParam($jsonParamList);
     }
 
@@ -72,6 +72,8 @@ class Params {
     }
 
     public function getMultipart() {
+        throw new \NetChiarelli\Api_NFe\exception\NotImplementedException('Esse método ' . __METHOD__ . ' será implementado em futuras versões');
+        
         return $this->multipartList;
     }
 
@@ -109,8 +111,9 @@ class Params {
      */
     public function setMultipart(array $multipartList) {
         
-        trigger_error('Method "' . __METHOD__ . '" ainda não implementado.', E_USER_WARNING);
-        
+        throw new \NetChiarelli\Api_NFe\exception\NotImplementedException('Esse método ' . __METHOD__ . ' será implementado em futuras versões');
+
+
         $this->multipartList = $multipartList;
         
         return $this;
