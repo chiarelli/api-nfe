@@ -1,12 +1,18 @@
 {
     "name": "chiarelli/api-nfe",
-    "version": "0.0.1-alpha",
+    "minimum-stability": "dev",
     "description": "Esta library foi concebida para ser utilizada como dependência do projeto chiarelli/wc-gerador-nfae",
     "type": "library",
     "authors": [
         {
             "name": "Raphael Mathias Chiareli Gomes",
             "email": "chiarelli.rm@gmail.com"
+        }
+    ],
+    "repositories": [    
+        {
+            "type": "vcs",
+            "url": "/var/www/html/Basics"
         }
     ],
     "require": {
@@ -16,7 +22,8 @@
         "guzzlehttp/guzzle": "^6.2",
         "symfony/dom-crawler": "^3.2",
         "picqer/php-barcode-generator": "^0.2.1",
-        "che/decimal": "^0.1.3"
+        "che/decimal": "^0.1.3",
+        "chiarelli/basics": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "dev-master",
@@ -27,5 +34,10 @@
             "NetChiarelli\\Api_NFe\\": "src/main/"
         },
         "files": ["src/main/constants.php", "src/main/api-functions.php"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.0.1-aplpha"
+        }
     }
 }

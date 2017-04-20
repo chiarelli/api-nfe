@@ -27,10 +27,10 @@ use NetChiarelli\Api_NFe\exception\ApiException;
 use NetChiarelli\Api_NFe\exception\RulesException;
 use NetChiarelli\Api_NFe\model\rj\IModel;
 use NetChiarelli\Api_NFe\util\Postmon;
-use NetChiarelli\Api_NFe\util\Result;
-use NetChiarelli\Api_NFe\util\Severity;
 use NetChiarelli\Api_NFe\util\StringUtil;
 use NetChiarelli\Api_NFe\validation\IStaticValidation;
+use NetChiarelli\Basics\validation\Result;
+use NetChiarelli\Basics\validation\Severity;
 
 /**
  * Description of AbstractBean

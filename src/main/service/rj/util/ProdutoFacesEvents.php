@@ -10,7 +10,7 @@ namespace NetChiarelli\Api_NFe\service\rj\util;
 
 use NetChiarelli\Api_NFe\model\rj\Pedido;
 use NetChiarelli\Api_NFe\model\rj\Produto;
-use NetChiarelli\Api_NFe\util\GenericIterator;
+use NetChiarelli\Basics\collections\GenericIterator;
 
 /**
  * Description of ProdutosFacesEvents

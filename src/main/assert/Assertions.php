@@ -21,7 +21,7 @@
 namespace NetChiarelli\Api_NFe\assert;
 
 use Assert\Assertion;
-use NetChiarelli\Api_NFe\util\Result;
+use NetChiarelli\Basics\validation\Result;
 
 /**
  * Description of Assertions

@@ -21,11 +21,11 @@
 namespace NetChiarelli\Api_NFe\validation\rj;
 
 use NetChiarelli\Api_NFe\assert\Assertion;
+use NetChiarelli\Api_NFe\assert\AssertionSoft;
 use NetChiarelli\Api_NFe\model\rj\Destinatario;
 use NetChiarelli\Api_NFe\util\NullResult;
-use NetChiarelli\Api_NFe\assert\AssertionSoft;
-use NetChiarelli\Api_NFe\util\Result;
-use NetChiarelli\Api_NFe\util\Severity;
+use NetChiarelli\Basics\validation\Result;
+use NetChiarelli\Basics\validation\Severity;
 
 /**
  * Description of DestinatarioValidation

@@ -19,7 +19,7 @@
 
 namespace NetChiarelli\Api_NFe\model\rj;
 
-use NetChiarelli\Api_NFe\util\Enum;
+use NetChiarelli\Basics\lang\Enum;
 
 /**
  * Description of TipoOperacaoEnum

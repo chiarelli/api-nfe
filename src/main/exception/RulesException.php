@@ -20,7 +20,7 @@
 
 namespace NetChiarelli\Api_NFe\exception;
 
-use NetChiarelli\Api_NFe\util\Result;
+use NetChiarelli\Basics\validation\Result;
 
 /**
  * Description of RulesException

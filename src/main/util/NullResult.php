@@ -20,7 +20,8 @@
 
 namespace NetChiarelli\Api_NFe\util;
 
-use NetChiarelli\Api_NFe\util\Result;
+use NetChiarelli\Basics\validation\Result;
+use NetChiarelli\Basics\validation\Severity;
 
 /**
  * Description of NullResult
@@ -37,7 +38,7 @@ class NullResult extends Result {
 
 
     public function __construct() {
-        parent::__construct('', \NetChiarelli\Api_NFe\util\Severity::valueOf('SUCCESS'));
+        parent::__construct('', Severity::valueOf('SUCCESS'));
     }
     
     function add(Result $last = null) {

@@ -10,8 +10,8 @@ namespace NetChiarelli\Api_NFe\assert;
 
 use Assert\Assertion;
 use NetChiarelli\Api_NFe\exception\InvalidArgumentException;
-use NetChiarelli\Api_NFe\util\Result;
-use NetChiarelli\Api_NFe\util\Severity;
+use NetChiarelli\Basics\validation\Result;
+use NetChiarelli\Basics\validation\Severity;
 
 
 
