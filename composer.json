@@ -9,6 +9,12 @@
             "email": "chiarelli.rm@gmail.com"
         }
     ],
+    "repositories": [    
+        {
+            "type": "vcs",
+            "url": "/var/www/html/Basics"
+        }
+    ],
     "require": {
         "beberlei/assert": "^2.7",
         "symfony/yaml": "^3.2",
@@ -16,7 +22,8 @@
         "guzzlehttp/guzzle": "^6.2",
         "symfony/dom-crawler": "^3.2",
         "picqer/php-barcode-generator": "^0.2.1",
-        "che/decimal": "^0.1.3"
+        "che/decimal": "^0.1.3",
+        "chiarelli/basics": "dev-master"
     },
     "require-dev": {
         "codeception/codeception": "dev-master",

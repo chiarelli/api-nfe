@@ -8,7 +8,7 @@
 
 namespace NetChiarelli\Api_NFe\service\rj\util;
 
-use NetChiarelli\Api_NFe\util\Enum;
+use NetChiarelli\Basics\lang\Enum;
 
 /**
  * Description of Unidadepublic function toArrayQuery() {

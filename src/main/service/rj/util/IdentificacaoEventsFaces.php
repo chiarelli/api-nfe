@@ -5,7 +5,7 @@ namespace NetChiarelli\Api_NFe\service\rj\util;
 use NetChiarelli\Api_NFe\model\rj\Destinatario;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
 use NetChiarelli\Api_NFe\model\rj\Transportador;
-use NetChiarelli\Api_NFe\util\GenericIterator;
+use NetChiarelli\Basics\collections\GenericIterator;
 
 /**
  * Description of IdentificacaoEventsFaces

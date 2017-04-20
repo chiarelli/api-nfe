@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "49452a62ad3064831792a91f25056703",
-    "content-hash": "461a30ab2fb399773a25937f6bc3b4c9",
+    "hash": "117a4f82b8d48ca6bd9a52947453c72b",
+    "content-hash": "22e8af036363ff6d63a2fd6ead6896cc",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -111,6 +111,29 @@
                 "number"
             ],
             "time": "2016-04-02 10:12:56"
+        },
+        {
+            "name": "chiarelli/basics",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "/var/www/html/Basics",
+                "reference": "9a785bcf453d7df04aa5bf54a4768f2f0a4b64ec"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NetChiarelli\\Basics\\": "src/main/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Raphael Mathias Chiarelli Gomes",
+                    "email": "chiarelli.rm@gmail.com"
+                }
+            ],
+            "description": "Classes que são muito utilizadas em meus projetos",
+            "time": "2017-04-20 09:50:03"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -2629,6 +2652,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "chiarelli/basics": 20,
         "codeception/codeception": 20,
         "megahertz/guzzle-tor": 20
     },
