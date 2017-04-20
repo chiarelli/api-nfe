@@ -5,13 +5,14 @@ namespace NetChiarelli\Api_NFe\service\rj\util;
 use NetChiarelli\Api_NFe\model\rj\Destinatario;
 use NetChiarelli\Api_NFe\model\rj\Remetente;
 use NetChiarelli\Api_NFe\model\rj\Transportador;
+use NetChiarelli\Api_NFe\util\GenericIterator;
 
 /**
  * Description of IdentificacaoEventsFaces
  *
  * @author raphael
  */
-class IdentificacaoEventsFaces implements IOrderEvents {
+class IdentificacaoEventsFaces implements IFacesEvents {
     use TraitIdentificacaoEvents;
 
     /** @var Remetente */
@@ -22,6 +23,9 @@ class IdentificacaoEventsFaces implements IOrderEvents {
 
     /** @var Transportador */
     protected $transportador;
+    
+    /** @var GenericIterator */    
+    protected $it;
 
     public function __construct(
     Remetente $remetente, Destinatario $destinatario, Transportador $transportador = null
@@ -30,23 +34,87 @@ class IdentificacaoEventsFaces implements IOrderEvents {
         $this->destinatario = $destinatario;
         $this->transportador = $transportador ?: Transportador::getInstanceSemFrete();
     }
-
-    /**
-     * Retorna um array representado a ordem que deve ser feita a invocação dos 
-     * métodos que representam os eventos do formulário faces.
-     * 
-     * @return array Contendo a ordem que deve ser executado os métodos.
-     */
-    static function getOrder() {
-        $order = [];
+    
+    function getTasks() {
+        $tasks = [];
 
         $oClass = new \ReflectionClass(TraitIdentificacaoEvents::class);
 
         foreach ($oClass->getMethods() as $method) {
-            $order[] = $method->name;
+            $tasks[] = $this->{$method->name}();
         }
 
-        return $order;
+        return GenericIterator::getInstance($tasks);
+    }
+    
+    function submitForm() {
+        $date = $this->remetente->getRemetenteDateCreate();
+        
+        $array =  [
+            'formulario' => 'formulario',
+            'temRascunho' => 'false',
+            'tipoRemetenteSelecionado' => '',
+            'remetenteCPF' => '',
+            'remetenteCNPJ' => '',
+            'remetenteNomePessoa' => '',
+            'remetenteCEP' => '',
+            'remetenteEndereco' => '',
+            'remetenteNumero' => '',
+            'remetenteComplemento' => '',
+            'remetenteBairro' => '',
+            'remetenteMunicipio' => '',
+            'remetenteTelefone' => '',
+            'remetenteEmail' => '',
+            'remetenteConfirmarEmail' => '',
+            'regimeTributario' => '',
+            'remetenteTipoOperacao' => '',
+            'remetenteTipoNaturezaOperacao' => '',
+            'remetenteOperacaoDataInputDate' => $date->getInputDate(),
+            'remetenteOperacaoDataInputCurrentDate' => $date->getInputCurrentDate(),
+            'remetenteOperacaoHora' => $date->getOperacaoHora(),
+            'remetenteOperacaoNatureza' => '',
+            'remetenteFinalidade' => '',
+            'destinatarioTipoDoc' => '',
+            'destinatarioNumDoc' => '',
+            'destinatarioIE' => '',
+            'destinatarioNomePessoa' => '',
+            'destinatarioConsumidorFinal' => '',
+            'identificacaoDestinatario' => '',
+            'destinatarioCEP' => '',
+            'destinatarioLogradouro' => '',
+            'destinatarioNumero' => '',
+            'destinatarioComplemento' => '',
+            'destinatarioBairro' => '',
+            'destinatarioUF' => '',
+            'destinatarioMunicipio' => '',
+            'destinatarioTelefone' => '',
+            'destinatarioEmail' => '',
+            'destinatarioConfirmarEmail' => '',
+            'transportadorModalidade' => '',
+            'transportadorTipoDoc' => '',
+            'transportadorNumDoc' => '',
+            'transportadorIE' => '',
+            'transportadorRazaoSocial' => '',
+            'transportadorEndereco' => '',
+            'transportadorUF' => '',
+            'transportadorMunicipio' => '',
+            'transpPlaca' => '',
+            'ufVeiculo' => 'org.jboss.seam.ui.NoSelectionConverter.noSelectionValue',
+            'transpQuantidade' => '',
+            'transpEspecie' => '',
+            'transpPesoBruto' => '',
+            'transpPesoLiquido' => '',
+            'transpNumVols' => '',
+            'transpMarca' => '',
+            'importacaoInfoComplementar' => '',
+            'javax.faces.ViewState' => '',
+        ];
+        
+        return array_merge( $array,
+                $this->remetente->toArrayQuery(), 
+                $this->destinatario->toArrayQuery(), 
+                $this->transportador->toArrayQuery()
+        );
     }
 
 }

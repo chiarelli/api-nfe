@@ -31,8 +31,7 @@ use NetChiarelli\Api_NFe\service\Params;
 use NetChiarelli\Api_NFe\service\rj\util\HeadersHtmlFaces;
 use NetChiarelli\Api_NFe\service\rj\util\IdentificacaoEventsFaces;
 use NetChiarelli\Api_NFe\service\rj\util\IdentificacaoEventsFacesComFrete;
-use NetChiarelli\Api_NFe\service\rj\util\IOrderEvents;
-use NetChiarelli\Api_NFe\service\rj\util\SubmitFormIdentificacao;
+use NetChiarelli\Api_NFe\service\rj\util\IFacesEvents;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\DomCrawler\Crawler;
@@ -49,11 +48,8 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
     /** @var Connection */
     protected $conn;
     
-    /** @var IOrderEvents */
+    /** @var IFacesEvents */
     protected $FacesEvents;
-    
-    /** @var SubmitFormIdentificacao */
-    protected $SubmitForm;
     
     /** @var string */
     protected $currentViewState;
@@ -91,7 +87,6 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
         
         $this->conn = $conn;
         $this->FacesEvents = new $facesEventsClass($remetente, $destinatario, $transportador);
-        $this->SubmitForm = new SubmitFormIdentificacao($remetente, $destinatario, $transportador);
     }
     
     function processPage() {
@@ -107,19 +102,22 @@ class IdentificacaoListener extends AbstractListenerGuzzleHttp {
         
         $facesEvents = $this->FacesEvents;
 
-        $order = $facesEvents->getOrder();
+        $it = $facesEvents->getTasks();
 
-        foreach ($order as $event) {            
-            echo '<h2 style="text-align: center;">' . $event . '</h2>';
-            $this->shoot( $facesEvents->{$event}() );
+        while ($it->valid()) {            
+//            echo '<h2 style="text-align: center;">' . $it->current()['javax.faces.source'] . '</h2>';
+            $this->shoot( $it->current() );
+            
+            $it->next();
         }
         
         $this->submitForm();
     }
     
     private function submitForm() {
+        $facesEvents = $this->FacesEvents;
         
-        $this->shoot($this->SubmitForm->submitForm(), FALSE);
+        $this->shoot($facesEvents->submitForm(), FALSE);
     }
 
     private function shoot($query, $headersFaces = TRUE) {

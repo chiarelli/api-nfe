@@ -8,11 +8,21 @@
 
 namespace NetChiarelli\Api_NFe\service\rj\util;
 
+use NetChiarelli\Api_NFe\util\GenericIterator;
+
 /**
  *
  * @author raphael
  */
-interface IOrderEvents {
-   
-    static function getOrder();
+interface IFacesEvents {
+    /**
+     * @return GenericIterator
+     */
+    function getTasks();
+    
+    /**
+     * @return array
+     */
+    function submitForm();
+    
 }

@@ -41,8 +41,9 @@ class SubmitFormIdentificacao {
     protected $transportador;
 
     public function __construct(
-    Remetente $remetente, Destinatario $destinatario, Transportador $transportador = null
-    ) {
+            Remetente $remetente, 
+            Destinatario $destinatario, 
+            Transportador $transportador = null) {
         $this->remetente = $remetente;
         $this->destinatario = $destinatario;
         $this->transportador = $transportador ?: Transportador::getInstanceSemFrete();

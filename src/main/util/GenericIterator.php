@@ -18,8 +18,24 @@ class GenericIterator implements \Iterator {
     private $position = 0;
     
     protected $array;    
+    
+    
+    static function merge(GenericIterator $iterator, array $array2) {
+        $array1 = $iterator->array;
+        
+        return new static(array_merge($array1, $array2));
+    }
+    
+    static function getInstance(array $array) {
+        return new static($array);
+    }
 
-    public function __construct(array $array) {
+
+    /**
+     * 
+     * @param array $array
+     */
+    protected function __construct($array) {
         $this->position = 0;
         
         $newArray = [];

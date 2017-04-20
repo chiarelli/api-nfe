@@ -8,12 +8,14 @@
 
 namespace NetChiarelli\Api_NFe\service\rj\util;
 
+use NetChiarelli\Api_NFe\util\GenericIterator;
+
 /**
  * Description of IdentificacaoEventsFacesComFrete
  *
  * @author raphael
  */
-class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces implements IOrderEvents {
+class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces implements IFacesEvents {
     use TraitIdentificacaoEventsFacesComFrete;
 
     /**
@@ -22,15 +24,15 @@ class IdentificacaoEventsFacesComFrete extends IdentificacaoEventsFaces implemen
      * 
      * @return array Contendo a ordem que deve ser executado os métodos.
      */
-    static function getOrder() {
-        $order = parent::getOrder();
+    function getTasks() {
+        $tasks = [];
 
         $oObject = new \ReflectionClass(TraitIdentificacaoEventsFacesComFrete::class);
         foreach ($oObject->getMethods() as $method) {
-            $order[] = $method->name;
+            $tasks[] = $this->{$method->name}();
         }
 
-        return $order;
+        return GenericIterator::merge(parent::getTasks(), $tasks);
     }
 
 }

@@ -17,7 +17,7 @@ use NetChiarelli\Api_NFe\util\GenericIterator;
  *
  * @author raphael
  */
-class ProdutoFacesEvents {
+class ProdutoFacesEvents implements IFacesEvents {
     use TraitRegisterProduto, TraitAddFrete, TraitAddProduct;
     
     /** @var Pedido */
@@ -30,7 +30,7 @@ class ProdutoFacesEvents {
         $this->pedido = $pedido;
     }
     
-    static function submitForm($viewState) {
+    function submitForm($viewState = null) {
         return [
             'formulario' => 'formulario',
             'idProduto' => '',
@@ -81,7 +81,7 @@ class ProdutoFacesEvents {
             $tasks = array_merge($tasks, $task4, $task5);
         }
         
-        $this->it = new GenericIterator($tasks);
+        $this->it = GenericIterator::getInstance($tasks);
         
         return $this->it;
     }
