@@ -11,7 +11,7 @@ namespace NetChiarelli\Api_NFe\service\rj\util;
 use NetChiarelli\Api_NFe\util\Enum;
 
 /**
- * Description of Unidade
+ * Description of Unidadepublic function toArrayQuery() {
  *
  * @author raphael
  */

@@ -20,6 +20,10 @@
 
 namespace NetChiarelli\Api_NFe\util;
 
+use Assert\Assertion;
+use Che\Math\Decimal\Decimal;
+use NetChiarelli\Api_NFe\exception\ResourceInaccessible;
+
 /**
  * Description of ConvertUtil
  *
@@ -43,7 +47,7 @@ class ConvertUtil {
         }
         
         $contents = file_get_contents($file);
-        $json = json_decode($contents);
+        $json = \json_decode($contents);
         
         foreach ($json as $municipio) {
             
@@ -55,5 +59,25 @@ class ConvertUtil {
         
         return FALSE;
     }
+    
+    static function decimalToBrl(Decimal $value) {
+        $value = $value->round(2, Decimal::ROUND_FLOOR);
+
+        $brl = str_replace('.', ',', $value);       
+        
+        return $brl;
+    }
+    
+    static function BrlToDecimal($value) {
+        $value = str_replace('.', '', $value);
+        $value = str_replace(',', '.', $value);
+        
+        Assertion::numeric($value);
+        
+        $decimal = new Decimal($value);
+        
+        return $decimal->round(2, Decimal::ROUND_FLOOR);
+    }
+    
     
 }

@@ -26,6 +26,6 @@
         "psr-4": {      
             "NetChiarelli\\Api_NFe\\": "src/main/"
         },
-        "files": ["src/main/constants.php"]
+        "files": ["src/main/constants.php", "src/main/api-functions.php"]
     }
 }

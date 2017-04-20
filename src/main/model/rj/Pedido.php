@@ -20,10 +20,11 @@
 
 namespace NetChiarelli\Api_NFe\model\rj;
 
+use Assert\InvalidArgumentException;
 use Che\Math\Decimal\Decimal;
 use NetChiarelli\Api_NFe\assert\Assertion;
 use NetChiarelli\Api_NFe\assert\Assertions;
-use NetChiarelli\Api_NFe\exception\InvalidArgumentException;
+use NetChiarelli\Api_NFe\util\ConvertUtil;
 
 /**
  * Description of Pedido
@@ -45,14 +46,17 @@ class Pedido {
     
     /**
      * 
-     * @param Produto[] $produtoList
+     * @param numeric $id [required]
+     * @param Produto[] $produtoList [optional]
      * 
      * @throws InvalidArgumentException
      */
-    public function __construct(array $produtoList = []) {
+    public function __construct($id, array $produtoList = [], Decimal $valorFrete = null) {
         $this->requiredArrayOfProduto($produtoList);
+        Assertion::numeric($id);
         
         $this->ProdutoList = $produtoList;
+        $this->valorFrete = $valorFrete ?: Decimal::zero();
     }
     
     public function addProduto(Produto $produto) {
@@ -76,7 +80,35 @@ class Pedido {
         
         return $this;
     }
+
+    function getValorFrete() {
+        return $this->valorFrete;
+    }
+
+    function setValorFrete(Decimal $valorFrete) {
+        $this->valorFrete = $valorFrete;
+    }
     
+    function hasFrete() {
+        if(get_class($this->valorFrete) === Decimal::class) {
+            return ($this->valorFrete->value() != '0');
+        }
+        return FALSE;
+    }
+    
+    /**
+     * 
+     * @return array()
+     */
+    public function toArrayQuery() {
+        return [
+            'valorFrete' => ConvertUtil::decimalToBrl($this->getValorFrete()),
+            'valorSeguro' => null,
+            'valorOutrasDesp' => null,
+            'descontoNota' => null,
+        ];
+    }
+
     /**
      * 
      * @param array $array
@@ -85,6 +117,7 @@ class Pedido {
      */
     protected final function requiredArrayOfProduto(array $array) {
         $className = Produto::class;
+        
         // Verifica se o array é do tipo Produto
         Assertion::satisfy(
             array($array, Produto::class), 
