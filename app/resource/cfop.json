@@ -1,0 +1,2309 @@
+{
+    "cfop": [
+        {
+            "id_cfop": "1",
+            "codigo_cfop": "1.101",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "2",
+            "codigo_cfop": "1.102",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "3",
+            "codigo_cfop": "1.111",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o de mercadoria recebida anteriormente em consigna\u00e7\u00e3o industrial"
+        },
+        {
+            "id_cfop": "4",
+            "codigo_cfop": "1.113",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o, de mercadoria recebida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "5",
+            "codigo_cfop": "1.116",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o originada de encomenda para recebimento futuro"
+        },
+        {
+            "id_cfop": "6",
+            "codigo_cfop": "1.117",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o originada de encomenda para recebimento futuro"
+        },
+        {
+            "id_cfop": "7",
+            "codigo_cfop": "1.118",
+            "desc_cfop": "Compra de mercadoria para comercializa\u00e7\u00e3o pelo adquirente origin\u00e1rio, entregue pelo vendedor remetente ao destinat\u00e1rio, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "8",
+            "codigo_cfop": "1.120",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o, em venda \u00e0 ordem, j\u00e1 recebida do vendedor remetente"
+        },
+        {
+            "id_cfop": "9",
+            "codigo_cfop": "1.121",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o, em venda \u00e0 ordem, j\u00e1 recebida do vendedor remetente"
+        },
+        {
+            "id_cfop": "10",
+            "codigo_cfop": "1.122",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o em que a mercadoria foi remetida pelo fornecedor ao industrializador sem transitar pelo estabelecimento adquirente"
+        },
+        {
+            "id_cfop": "11",
+            "codigo_cfop": "1.124",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada por outra empresa"
+        },
+        {
+            "id_cfop": "12",
+            "codigo_cfop": "1.125",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada por outra empresa quando a mercadoria remetida para utiliza\u00e7\u00e3o no processo de industrializa\u00e7\u00e3o n\u00e3o transitou pelo estabelecimento adquirente da mercadoria"
+        },
+        {
+            "id_cfop": "13",
+            "codigo_cfop": "1.126",
+            "desc_cfop": "Compra para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "14",
+            "codigo_cfop": "1.151",
+            "desc_cfop": "Transfer\u00eancia para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "15",
+            "codigo_cfop": "1.152",
+            "desc_cfop": "Transfer\u00eancia para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "16",
+            "codigo_cfop": "1.153",
+            "desc_cfop": "Transfer\u00eancia de energia el\u00e9trica para distribui\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "17",
+            "codigo_cfop": "1.154",
+            "desc_cfop": "Transfer\u00eancia para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "18",
+            "codigo_cfop": "1.201",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "19",
+            "codigo_cfop": "1.202",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "20",
+            "codigo_cfop": "1.203",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "21",
+            "codigo_cfop": "1.204",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "22",
+            "codigo_cfop": "1.205",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "23",
+            "codigo_cfop": "1.206",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 presta\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "24",
+            "codigo_cfop": "1.207",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 venda de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "25",
+            "codigo_cfop": "1.208",
+            "desc_cfop": "Devolu\u00e7\u00e3o de produ\u00e7\u00e3o do estabelecimento, remetida em transfer\u00eancia"
+        },
+        {
+            "id_cfop": "26",
+            "codigo_cfop": "1.209",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria adquirida ou recebida de terceiros, remetida em transfer\u00eancia"
+        },
+        {
+            "id_cfop": "27",
+            "codigo_cfop": "1.251",
+            "desc_cfop": "Compra de energia el\u00e9trica para distribui\u00e7\u00e3o ou comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "28",
+            "codigo_cfop": "1.252",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "29",
+            "codigo_cfop": "1.253",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "30",
+            "codigo_cfop": "1.254",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "31",
+            "codigo_cfop": "1.255",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "32",
+            "codigo_cfop": "1.256",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "33",
+            "codigo_cfop": "1.257",
+            "desc_cfop": "Compra de energia el\u00e9trica para consumo por demanda contratada"
+        },
+        {
+            "id_cfop": "34",
+            "codigo_cfop": "1.301",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "35",
+            "codigo_cfop": "1.302",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "36",
+            "codigo_cfop": "1.303",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "37",
+            "codigo_cfop": "1.304",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento de prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "38",
+            "codigo_cfop": "1.305",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "39",
+            "codigo_cfop": "1.306",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "40",
+            "codigo_cfop": "1.351",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "41",
+            "codigo_cfop": "1.352",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "42",
+            "codigo_cfop": "1.353",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "43",
+            "codigo_cfop": "1.354",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "44",
+            "codigo_cfop": "1.355",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "45",
+            "codigo_cfop": "1.356",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "46",
+            "codigo_cfop": "1.401",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "47",
+            "codigo_cfop": "1.403",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "48",
+            "codigo_cfop": "1.406",
+            "desc_cfop": "Compra de bem para o ativo imobilizado cuja mercadoria est\u00e1 sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "49",
+            "codigo_cfop": "1.407",
+            "desc_cfop": "Compra de mercadoria para uso ou consumo cuja mercadoria est\u00e1 sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "50",
+            "codigo_cfop": "1.408",
+            "desc_cfop": "Transfer\u00eancia para industrializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "51",
+            "codigo_cfop": "1.409",
+            "desc_cfop": "Transfer\u00eancia para comercializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "52",
+            "codigo_cfop": "1.410",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "53",
+            "codigo_cfop": "1.411",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "54",
+            "codigo_cfop": "1.414",
+            "desc_cfop": "Retorno de produ\u00e7\u00e3o do estabelecimento, remetida para venda fora do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "55",
+            "codigo_cfop": "1.415",
+            "desc_cfop": "Retorno de mercadoria adquirida ou recebida de terceiros, remetida para venda fora do estabelecimento em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "56",
+            "codigo_cfop": "1.451",
+            "desc_cfop": "Retorno de animal do estabelecimento produtor"
+        },
+        {
+            "id_cfop": "57",
+            "codigo_cfop": "1.452",
+            "desc_cfop": "Retorno de insumo n\u00e3o utilizado na produ\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "58",
+            "codigo_cfop": "1.501",
+            "desc_cfop": "Entrada de mercadoria recebida com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "59",
+            "codigo_cfop": "1.503",
+            "desc_cfop": "Entrada decorrente de devolu\u00e7\u00e3o de produto remetido com fim espec\u00edfico de exporta\u00e7\u00e3o, de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "60",
+            "codigo_cfop": "1.504",
+            "desc_cfop": "Entrada decorrente de devolu\u00e7\u00e3o de mercadoria remetida com fim espec\u00edfico de exporta\u00e7\u00e3o, adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "61",
+            "codigo_cfop": "1.551",
+            "desc_cfop": "Compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "62",
+            "codigo_cfop": "1.552",
+            "desc_cfop": "Transfer\u00eancia de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "63",
+            "codigo_cfop": "1.553",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "64",
+            "codigo_cfop": "1.554",
+            "desc_cfop": "Retorno de bem do ativo imobilizado remetido para uso fora do estabelecimento"
+        },
+        {
+            "id_cfop": "65",
+            "codigo_cfop": "1.555",
+            "desc_cfop": "Entrada de bem do ativo imobilizado de terceiro, remetido para uso no estabelecimento"
+        },
+        {
+            "id_cfop": "66",
+            "codigo_cfop": "1.556",
+            "desc_cfop": "Compra de material para uso ou consumo"
+        },
+        {
+            "id_cfop": "67",
+            "codigo_cfop": "1.557",
+            "desc_cfop": "Transfer\u00eancia de material para uso ou consumo"
+        },
+        {
+            "id_cfop": "68",
+            "codigo_cfop": "1.601",
+            "desc_cfop": "Recebimento, por transfer\u00eancia, de cr\u00e9dito de ICMS"
+        },
+        {
+            "id_cfop": "69",
+            "codigo_cfop": "1.602",
+            "desc_cfop": "Recebimento, por transfer\u00eancia, de saldo credor de ICMS de outro estabelecimento da mesma empresa, para compensa\u00e7\u00e3o de saldo devedor de ICMS"
+        },
+        {
+            "id_cfop": "70",
+            "codigo_cfop": "1.603",
+            "desc_cfop": "Ressarcimento de ICMS retido por substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "71",
+            "codigo_cfop": "1.604",
+            "desc_cfop": "Lan\u00e7amento do cr\u00e9dito relativo \u00e0 compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "72",
+            "codigo_cfop": "1.901",
+            "desc_cfop": "Entrada para industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "73",
+            "codigo_cfop": "1.902",
+            "desc_cfop": "Retorno de mercadoria remetida para industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "74",
+            "codigo_cfop": "1.903",
+            "desc_cfop": "Entrada de mercadoria remetida para industrializa\u00e7\u00e3o e n\u00e3o aplicada no referido processo"
+        },
+        {
+            "id_cfop": "75",
+            "codigo_cfop": "1.904",
+            "desc_cfop": "Retorno de remessa para venda fora do estabelecimento"
+        },
+        {
+            "id_cfop": "76",
+            "codigo_cfop": "1.905",
+            "desc_cfop": "Entrada de mercadoria recebida para dep\u00f3sito em dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "77",
+            "codigo_cfop": "1.906",
+            "desc_cfop": "Retorno de mercadoria remetida para dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "78",
+            "codigo_cfop": "1.907",
+            "desc_cfop": "Retorno simb\u00f3lico de mercadoria remetida para dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "79",
+            "codigo_cfop": "1.908",
+            "desc_cfop": "Entrada de bem por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "80",
+            "codigo_cfop": "1.909",
+            "desc_cfop": "Retorno de bem remetido por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "81",
+            "codigo_cfop": "1.910",
+            "desc_cfop": "Entrada de bonifica\u00e7\u00e3o, doa\u00e7\u00e3o ou brinde"
+        },
+        {
+            "id_cfop": "82",
+            "codigo_cfop": "1.911",
+            "desc_cfop": "Entrada de amostra gr\u00e1tis"
+        },
+        {
+            "id_cfop": "83",
+            "codigo_cfop": "1.912",
+            "desc_cfop": "Entrada de mercadoria ou bem recebido para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "84",
+            "codigo_cfop": "1.913",
+            "desc_cfop": "Retorno de mercadoria ou bem remetido para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "85",
+            "codigo_cfop": "1.914",
+            "desc_cfop": "Retorno de mercadoria ou bem remetido para exposi\u00e7\u00e3o ou feira"
+        },
+        {
+            "id_cfop": "86",
+            "codigo_cfop": "1.915",
+            "desc_cfop": "Entrada de mercadoria ou bem recebido para conserto ou reparo"
+        },
+        {
+            "id_cfop": "87",
+            "codigo_cfop": "1.916",
+            "desc_cfop": "Retorno de mercadoria ou bem remetido para conserto ou reparo"
+        },
+        {
+            "id_cfop": "88",
+            "codigo_cfop": "1.917",
+            "desc_cfop": "Entrada de mercadoria recebida em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "89",
+            "codigo_cfop": "1.918",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria remetida em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "90",
+            "codigo_cfop": "1.919",
+            "desc_cfop": "Devolu\u00e7\u00e3o simb\u00f3lica de mercadoria vendida ou utilizada em processo industrial, remetida anteriormente em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "91",
+            "codigo_cfop": "1.920",
+            "desc_cfop": "Entrada de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "92",
+            "codigo_cfop": "1.921",
+            "desc_cfop": "Retorno de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "93",
+            "codigo_cfop": "1.922",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de simples faturamento decorrente de compra para recebimento futuro"
+        },
+        {
+            "id_cfop": "94",
+            "codigo_cfop": "1.923",
+            "desc_cfop": "Entrada de mercadoria recebida do vendedor remetente, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "95",
+            "codigo_cfop": "1.924",
+            "desc_cfop": "Entrada para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando esta n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "96",
+            "codigo_cfop": "1.925",
+            "desc_cfop": "Retorno de mercadoria remetida para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando esta n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "97",
+            "codigo_cfop": "1.926",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de reclassifica\u00e7\u00e3o de mercadoria decorrente de forma\u00e7\u00e3o de kit ou de sua desagrega\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "98",
+            "codigo_cfop": "1.949",
+            "desc_cfop": "Outra entrada de mercadoria ou presta\u00e7\u00e3o de servi\u00e7o n\u00e3o especificada"
+        },
+        {
+            "id_cfop": "99",
+            "codigo_cfop": "2.101",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "100",
+            "codigo_cfop": "2.102",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "101",
+            "codigo_cfop": "2.111",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o de mercadoria recebida anteriormente em consigna\u00e7\u00e3o industrial"
+        },
+        {
+            "id_cfop": "102",
+            "codigo_cfop": "2.113",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o, de mercadoria recebida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "103",
+            "codigo_cfop": "2.116",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o originada de encomenda para recebimento futuro"
+        },
+        {
+            "id_cfop": "104",
+            "codigo_cfop": "2.117",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o originada de encomenda para recebimento futuro"
+        },
+        {
+            "id_cfop": "105",
+            "codigo_cfop": "2.118",
+            "desc_cfop": "Compra de mercadoria para comercializa\u00e7\u00e3o pelo adquirente origin\u00e1rio, entregue pelo vendedor remetente ao destinat\u00e1rio, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "106",
+            "codigo_cfop": "2.120",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o, em venda \u00e0 ordem, j\u00e1 recebida do vendedor remetente"
+        },
+        {
+            "id_cfop": "107",
+            "codigo_cfop": "2.121",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o, em venda \u00e0 ordem, j\u00e1 recebida do vendedor remetente"
+        },
+        {
+            "id_cfop": "108",
+            "codigo_cfop": "2.122",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o em que a mercadoria foi remetida pelo fornecedor ao industrializador sem transitar pelo estabelecimento adquirente"
+        },
+        {
+            "id_cfop": "109",
+            "codigo_cfop": "2.124",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada por outra empresa"
+        },
+        {
+            "id_cfop": "110",
+            "codigo_cfop": "2.125",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada por outra empresa quando a mercadoria remetida para utiliza\u00e7\u00e3o no processo de industrializa\u00e7\u00e3o n\u00e3o transitou pelo estabelecimento adquirente da mercadoria"
+        },
+        {
+            "id_cfop": "111",
+            "codigo_cfop": "2.126",
+            "desc_cfop": "Compra para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "112",
+            "codigo_cfop": "2.151",
+            "desc_cfop": "Transfer\u00eancia para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "113",
+            "codigo_cfop": "2.152",
+            "desc_cfop": "Transfer\u00eancia para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "114",
+            "codigo_cfop": "2.153",
+            "desc_cfop": "Transfer\u00eancia de energia el\u00e9trica para distribui\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "115",
+            "codigo_cfop": "2.154",
+            "desc_cfop": "Transfer\u00eancia para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "116",
+            "codigo_cfop": "2.201",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "117",
+            "codigo_cfop": "2.202",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "118",
+            "codigo_cfop": "2.203",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "119",
+            "codigo_cfop": "2.204",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "120",
+            "codigo_cfop": "2.205",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "121",
+            "codigo_cfop": "2.206",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 presta\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "122",
+            "codigo_cfop": "2.207",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 venda de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "123",
+            "codigo_cfop": "2.208",
+            "desc_cfop": "Devolu\u00e7\u00e3o de produ\u00e7\u00e3o do estabelecimento, remetida em transfer\u00eancia"
+        },
+        {
+            "id_cfop": "124",
+            "codigo_cfop": "2.209",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria adquirida ou recebida de terceiros, remetida em transfer\u00eancia"
+        },
+        {
+            "id_cfop": "125",
+            "codigo_cfop": "2.251",
+            "desc_cfop": "Compra de energia el\u00e9trica para distribui\u00e7\u00e3o ou comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "126",
+            "codigo_cfop": "2.252",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "127",
+            "codigo_cfop": "2.253",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "128",
+            "codigo_cfop": "2.254",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "129",
+            "codigo_cfop": "2.255",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "130",
+            "codigo_cfop": "2.256",
+            "desc_cfop": "Compra de energia el\u00e9trica por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "131",
+            "codigo_cfop": "2.257",
+            "desc_cfop": "Compra de energia el\u00e9trica para consumo por demanda contratada"
+        },
+        {
+            "id_cfop": "132",
+            "codigo_cfop": "2.301",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "133",
+            "codigo_cfop": "2.302",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "134",
+            "codigo_cfop": "2.303",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "135",
+            "codigo_cfop": "2.304",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento de prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "136",
+            "codigo_cfop": "2.305",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "137",
+            "codigo_cfop": "2.306",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "138",
+            "codigo_cfop": "2.351",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "139",
+            "codigo_cfop": "2.352",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "140",
+            "codigo_cfop": "2.353",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "141",
+            "codigo_cfop": "2.354",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "142",
+            "codigo_cfop": "2.355",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "143",
+            "codigo_cfop": "2.356",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "144",
+            "codigo_cfop": "2.401",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "145",
+            "codigo_cfop": "2.403",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "146",
+            "codigo_cfop": "2.406",
+            "desc_cfop": "Compra de bem para o ativo imobilizado cuja mercadoria est\u00e1 sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "147",
+            "codigo_cfop": "2.407",
+            "desc_cfop": "Compra de mercadoria para uso ou consumo cuja mercadoria est\u00e1 sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "148",
+            "codigo_cfop": "2.408",
+            "desc_cfop": "Transfer\u00eancia para industrializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "149",
+            "codigo_cfop": "2.409",
+            "desc_cfop": "Transfer\u00eancia para comercializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "150",
+            "codigo_cfop": "2.410",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "151",
+            "codigo_cfop": "2.411",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "152",
+            "codigo_cfop": "2.414",
+            "desc_cfop": "Retorno de produ\u00e7\u00e3o do estabelecimento, remetida para venda fora do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "153",
+            "codigo_cfop": "2.415",
+            "desc_cfop": "Retorno de mercadoria adquirida ou recebida de terceiros, remetida para venda fora do estabelecimento em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "154",
+            "codigo_cfop": "2.501",
+            "desc_cfop": "Entrada de mercadoria recebida com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "155",
+            "codigo_cfop": "2.503",
+            "desc_cfop": "Entrada decorrente de devolu\u00e7\u00e3o de produto remetido com fim espec\u00edfico de exporta\u00e7\u00e3o, de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "156",
+            "codigo_cfop": "2.504",
+            "desc_cfop": "Entrada decorrente de devolu\u00e7\u00e3o de mercadoria remetida com fim espec\u00edfico de exporta\u00e7\u00e3o, adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "157",
+            "codigo_cfop": "2.551",
+            "desc_cfop": "Compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "158",
+            "codigo_cfop": "2.552",
+            "desc_cfop": "Transfer\u00eancia de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "159",
+            "codigo_cfop": "2.553",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "160",
+            "codigo_cfop": "2.554",
+            "desc_cfop": "Retorno de bem do ativo imobilizado remetido para uso fora do estabelecimento"
+        },
+        {
+            "id_cfop": "161",
+            "codigo_cfop": "2.555",
+            "desc_cfop": "Entrada de bem do ativo imobilizado de terceiro, remetido para uso no estabelecimento"
+        },
+        {
+            "id_cfop": "162",
+            "codigo_cfop": "2.556",
+            "desc_cfop": "Compra de material para uso ou consumo"
+        },
+        {
+            "id_cfop": "163",
+            "codigo_cfop": "2.557",
+            "desc_cfop": "Transfer\u00eancia de material para uso ou consumo"
+        },
+        {
+            "id_cfop": "164",
+            "codigo_cfop": "2.603",
+            "desc_cfop": "Ressarcimento de ICMS retido por substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "165",
+            "codigo_cfop": "2.901",
+            "desc_cfop": "Entrada para industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "166",
+            "codigo_cfop": "2.902",
+            "desc_cfop": "Retorno de mercadoria remetida para industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "167",
+            "codigo_cfop": "2.903",
+            "desc_cfop": "Entrada de mercadoria remetida para industrializa\u00e7\u00e3o e n\u00e3o aplicada no referido processo"
+        },
+        {
+            "id_cfop": "168",
+            "codigo_cfop": "2.904",
+            "desc_cfop": "Retorno de remessa para venda fora do estabelecimento"
+        },
+        {
+            "id_cfop": "169",
+            "codigo_cfop": "2.905",
+            "desc_cfop": "Entrada de mercadoria recebida para dep\u00f3sito em dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "170",
+            "codigo_cfop": "2.906",
+            "desc_cfop": "Retorno de mercadoria remetida para dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "171",
+            "codigo_cfop": "2.907",
+            "desc_cfop": "Retorno simb\u00f3lico de mercadoria remetida para dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "172",
+            "codigo_cfop": "2.908",
+            "desc_cfop": "Entrada de bem por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "173",
+            "codigo_cfop": "2.909",
+            "desc_cfop": "Retorno de bem remetido por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "174",
+            "codigo_cfop": "2.910",
+            "desc_cfop": "Entrada de bonifica\u00e7\u00e3o, doa\u00e7\u00e3o ou brinde"
+        },
+        {
+            "id_cfop": "175",
+            "codigo_cfop": "2.911",
+            "desc_cfop": "Entrada de amostra gr\u00e1tis"
+        },
+        {
+            "id_cfop": "176",
+            "codigo_cfop": "2.912",
+            "desc_cfop": "Entrada de mercadoria ou bem recebido para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "177",
+            "codigo_cfop": "2.913",
+            "desc_cfop": "Retorno de mercadoria ou bem remetido para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "178",
+            "codigo_cfop": "2.914",
+            "desc_cfop": "Retorno de mercadoria ou bem remetido para exposi\u00e7\u00e3o ou feira"
+        },
+        {
+            "id_cfop": "179",
+            "codigo_cfop": "2.915",
+            "desc_cfop": "Entrada de mercadoria ou bem recebido para conserto ou reparo"
+        },
+        {
+            "id_cfop": "180",
+            "codigo_cfop": "2.916",
+            "desc_cfop": "Retorno de mercadoria ou bem remetido para conserto ou reparo"
+        },
+        {
+            "id_cfop": "181",
+            "codigo_cfop": "2.917",
+            "desc_cfop": "Entrada de mercadoria recebida em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "182",
+            "codigo_cfop": "2.918",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria remetida em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "183",
+            "codigo_cfop": "2.919",
+            "desc_cfop": "Devolu\u00e7\u00e3o simb\u00f3lica de mercadoria vendida ou utilizada em processo industrial, remetida anteriormente em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "184",
+            "codigo_cfop": "2.920",
+            "desc_cfop": "Entrada de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "185",
+            "codigo_cfop": "2.921",
+            "desc_cfop": "Retorno de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "186",
+            "codigo_cfop": "2.922",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de simples faturamento decorrente de compra para recebimento futuro"
+        },
+        {
+            "id_cfop": "187",
+            "codigo_cfop": "2.923",
+            "desc_cfop": "Entrada de mercadoria recebida do vendedor remetente, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "188",
+            "codigo_cfop": "2.924",
+            "desc_cfop": "Entrada para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando esta n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "189",
+            "codigo_cfop": "2.925",
+            "desc_cfop": "Retorno de mercadoria remetida para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando esta n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "190",
+            "codigo_cfop": "2.949",
+            "desc_cfop": "Outra entrada de mercadoria ou presta\u00e7\u00e3o de servi\u00e7o n\u00e3o especificado"
+        },
+        {
+            "id_cfop": "191",
+            "codigo_cfop": "3.101",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "192",
+            "codigo_cfop": "3.102",
+            "desc_cfop": "Compra para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "193",
+            "codigo_cfop": "3.126",
+            "desc_cfop": "Compra para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "194",
+            "codigo_cfop": "3.127",
+            "desc_cfop": "Compra para industrializa\u00e7\u00e3o sob o regime de \"drawback\""
+        },
+        {
+            "id_cfop": "195",
+            "codigo_cfop": "3.201",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "196",
+            "codigo_cfop": "3.202",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "197",
+            "codigo_cfop": "3.205",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "198",
+            "codigo_cfop": "3.206",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 presta\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "199",
+            "codigo_cfop": "3.207",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 venda de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "200",
+            "codigo_cfop": "3.211",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de produ\u00e7\u00e3o do estabelecimento sob o regime de \"drawback\""
+        },
+        {
+            "id_cfop": "201",
+            "codigo_cfop": "3.251",
+            "desc_cfop": "Compra de energia el\u00e9trica para distribui\u00e7\u00e3o ou comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "202",
+            "codigo_cfop": "3.301",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "203",
+            "codigo_cfop": "3.351",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "204",
+            "codigo_cfop": "3.352",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento industrial"
+        },
+        {
+            "id_cfop": "205",
+            "codigo_cfop": "3.353",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento comercial"
+        },
+        {
+            "id_cfop": "206",
+            "codigo_cfop": "3.354",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "207",
+            "codigo_cfop": "3.355",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "208",
+            "codigo_cfop": "3.356",
+            "desc_cfop": "Aquisi\u00e7\u00e3o de servi\u00e7o de transporte por estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "209",
+            "codigo_cfop": "3.503",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria exportada que tenha sido recebida com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "210",
+            "codigo_cfop": "3.551",
+            "desc_cfop": "Compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "211",
+            "codigo_cfop": "3.553",
+            "desc_cfop": "Devolu\u00e7\u00e3o de venda de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "212",
+            "codigo_cfop": "3.556",
+            "desc_cfop": "Compra de material para uso ou consumo"
+        },
+        {
+            "id_cfop": "213",
+            "codigo_cfop": "3.930",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de entrada de bem sob amparo de regime especial aduaneiro de admiss\u00e3o tempor\u00e1ria"
+        },
+        {
+            "id_cfop": "214",
+            "codigo_cfop": "3.949",
+            "desc_cfop": "Outra entrada de mercadoria ou presta\u00e7\u00e3o de servi\u00e7o n\u00e3o especificado"
+        },
+        {
+            "id_cfop": "215",
+            "codigo_cfop": "5.101",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "216",
+            "codigo_cfop": "5.102",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "217",
+            "codigo_cfop": "5.103",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento, efetuada fora do estabelecimento"
+        },
+        {
+            "id_cfop": "218",
+            "codigo_cfop": "5.104",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, efetuada fora do estabelecimento"
+        },
+        {
+            "id_cfop": "219",
+            "codigo_cfop": "5.105",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "220",
+            "codigo_cfop": "5.106",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "221",
+            "codigo_cfop": "5.109",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "222",
+            "codigo_cfop": "5.110",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "223",
+            "codigo_cfop": "5.111",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento remetida anteriormente em consigna\u00e7\u00e3o industrial"
+        },
+        {
+            "id_cfop": "224",
+            "codigo_cfop": "5.112",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros remetida anteriormente em consigna\u00e7\u00e3o industrial"
+        },
+        {
+            "id_cfop": "225",
+            "codigo_cfop": "5.113",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento remetida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "226",
+            "codigo_cfop": "5.114",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros remetida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "227",
+            "codigo_cfop": "5.115",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, recebida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "228",
+            "codigo_cfop": "5.116",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento originada de encomenda para entrega futura"
+        },
+        {
+            "id_cfop": "229",
+            "codigo_cfop": "5.117",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, originada de encomenda para entrega futura"
+        },
+        {
+            "id_cfop": "230",
+            "codigo_cfop": "5.118",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento entregue ao destinat\u00e1rio por conta e ordem do adquirente origin\u00e1rio, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "231",
+            "codigo_cfop": "5.119",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinat\u00e1rio por conta e ordem do adquirente origin\u00e1rio, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "232",
+            "codigo_cfop": "5.120",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinat\u00e1rio pelo vendedor remetente, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "233",
+            "codigo_cfop": "5.122",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento remetida para industrializa\u00e7\u00e3o, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "234",
+            "codigo_cfop": "5.123",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros remetida para industrializa\u00e7\u00e3o, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "235",
+            "codigo_cfop": "5.124",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada para outra empresa"
+        },
+        {
+            "id_cfop": "236",
+            "codigo_cfop": "5.125",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada para outra empresa quando a mercadoria recebida para utiliza\u00e7\u00e3o no processo de industrializa\u00e7\u00e3o n\u00e3o transitar pelo estabelecimento adquirente da mercadoria"
+        },
+        {
+            "id_cfop": "237",
+            "codigo_cfop": "5.151",
+            "desc_cfop": "Transfer\u00eancia de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "238",
+            "codigo_cfop": "5.152",
+            "desc_cfop": "Transfer\u00eancia de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "239",
+            "codigo_cfop": "5.153",
+            "desc_cfop": "Transfer\u00eancia de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "240",
+            "codigo_cfop": "5.155",
+            "desc_cfop": "Transfer\u00eancia de produ\u00e7\u00e3o do estabelecimento, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "241",
+            "codigo_cfop": "5.156",
+            "desc_cfop": "Transfer\u00eancia de mercadoria adquirida ou recebida de terceiros, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "242",
+            "codigo_cfop": "5.201",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "243",
+            "codigo_cfop": "5.202",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "244",
+            "codigo_cfop": "5.205",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo a aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "245",
+            "codigo_cfop": "5.206",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo a aquisi\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "246",
+            "codigo_cfop": "5.207",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 compra de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "247",
+            "codigo_cfop": "5.208",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida em transfer\u00eancia para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "248",
+            "codigo_cfop": "5.209",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida em transfer\u00eancia para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "249",
+            "codigo_cfop": "5.210",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "250",
+            "codigo_cfop": "5.251",
+            "desc_cfop": "Venda de energia el\u00e9trica para distribui\u00e7\u00e3o ou comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "251",
+            "codigo_cfop": "5.252",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento industrial"
+        },
+        {
+            "id_cfop": "252",
+            "codigo_cfop": "5.253",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento comercial"
+        },
+        {
+            "id_cfop": "253",
+            "codigo_cfop": "5.254",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "254",
+            "codigo_cfop": "5.255",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "255",
+            "codigo_cfop": "5.256",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "256",
+            "codigo_cfop": "5.257",
+            "desc_cfop": "Venda de energia el\u00e9trica para consumo por demanda contratada"
+        },
+        {
+            "id_cfop": "257",
+            "codigo_cfop": "5.258",
+            "desc_cfop": "Venda de energia el\u00e9trica a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "258",
+            "codigo_cfop": "5.301",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "259",
+            "codigo_cfop": "5.302",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento industrial"
+        },
+        {
+            "id_cfop": "260",
+            "codigo_cfop": "5.303",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento comercial"
+        },
+        {
+            "id_cfop": "261",
+            "codigo_cfop": "5.304",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento de prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "262",
+            "codigo_cfop": "5.305",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "263",
+            "codigo_cfop": "5.306",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "264",
+            "codigo_cfop": "5.307",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "265",
+            "codigo_cfop": "5.351",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "266",
+            "codigo_cfop": "5.352",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento industrial"
+        },
+        {
+            "id_cfop": "267",
+            "codigo_cfop": "5.353",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento comercial"
+        },
+        {
+            "id_cfop": "268",
+            "codigo_cfop": "5.354",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento de prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "269",
+            "codigo_cfop": "5.355",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "270",
+            "codigo_cfop": "5.356",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "271",
+            "codigo_cfop": "5.357",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "272",
+            "codigo_cfop": "5.401",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, na condi\u00e7\u00e3o de contribuinte substituto"
+        },
+        {
+            "id_cfop": "273",
+            "codigo_cfop": "5.402",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento de produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, em opera\u00e7\u00e3o entre contribuintes substitutos do mesmo produto"
+        },
+        {
+            "id_cfop": "274",
+            "codigo_cfop": "5.403",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, na condi\u00e7\u00e3o de contribuinte substituto"
+        },
+        {
+            "id_cfop": "275",
+            "codigo_cfop": "5.405",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, na condi\u00e7\u00e3o de contribuinte substitu\u00eddo"
+        },
+        {
+            "id_cfop": "276",
+            "codigo_cfop": "5.408",
+            "desc_cfop": "Transfer\u00eancia de produ\u00e7\u00e3o do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "277",
+            "codigo_cfop": "5.409",
+            "desc_cfop": "Transfer\u00eancia de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "278",
+            "codigo_cfop": "5.410",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para industrializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "279",
+            "codigo_cfop": "5.411",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para comercializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "280",
+            "codigo_cfop": "5.412",
+            "desc_cfop": "Devolu\u00e7\u00e3o de bem do ativo imobilizado, em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "281",
+            "codigo_cfop": "5.413",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria destinada ao uso ou consumo, em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "282",
+            "codigo_cfop": "5.414",
+            "desc_cfop": "Remessa de produ\u00e7\u00e3o do estabelecimento para venda fora do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "283",
+            "codigo_cfop": "5.415",
+            "desc_cfop": "Remessa de mercadoria adquirida ou recebida de terceiros para venda fora do estabelecimento, em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "284",
+            "codigo_cfop": "5.451",
+            "desc_cfop": "Remessa de animal e de insumo para estabelecimento produtor"
+        },
+        {
+            "id_cfop": "285",
+            "codigo_cfop": "5.501",
+            "desc_cfop": "Remessa de produ\u00e7\u00e3o do estabelecimento, com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "286",
+            "codigo_cfop": "5.502",
+            "desc_cfop": "Remessa de mercadoria adquirida ou recebida de terceiros, com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "287",
+            "codigo_cfop": "5.503",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "288",
+            "codigo_cfop": "5.551",
+            "desc_cfop": "Venda de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "289",
+            "codigo_cfop": "5.552",
+            "desc_cfop": "Transfer\u00eancia de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "290",
+            "codigo_cfop": "5.553",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "291",
+            "codigo_cfop": "5.554",
+            "desc_cfop": "Remessa de bem do ativo imobilizado para uso fora do estabelecimento"
+        },
+        {
+            "id_cfop": "292",
+            "codigo_cfop": "5.555",
+            "desc_cfop": "Devolu\u00e7\u00e3o de bem do ativo imobilizado de terceiro, recebido para uso no estabelecimento"
+        },
+        {
+            "id_cfop": "293",
+            "codigo_cfop": "5.556",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra de material de uso ou consumo"
+        },
+        {
+            "id_cfop": "294",
+            "codigo_cfop": "5.557",
+            "desc_cfop": "Transfer\u00eancia de material de uso ou consumo"
+        },
+        {
+            "id_cfop": "295",
+            "codigo_cfop": "5.601",
+            "desc_cfop": "Transfer\u00eancia de cr\u00e9dito de ICMS acumulado"
+        },
+        {
+            "id_cfop": "296",
+            "codigo_cfop": "5.602",
+            "desc_cfop": "Transfer\u00eancia de saldo credor de ICMS para outro estabelecimento da mesma empresa, destinado \u00e0 compensa\u00e7\u00e3o de saldo devedor de ICMS"
+        },
+        {
+            "id_cfop": "297",
+            "codigo_cfop": "5.603",
+            "desc_cfop": "Ressarcimento de ICMS retido por substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "298",
+            "codigo_cfop": "5.901",
+            "desc_cfop": "Remessa para industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "299",
+            "codigo_cfop": "5.902",
+            "desc_cfop": "Retorno de mercadoria utilizada na industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "300",
+            "codigo_cfop": "5.903",
+            "desc_cfop": "Retorno de mercadoria recebida para industrializa\u00e7\u00e3o e n\u00e3o aplicada no referido processo"
+        },
+        {
+            "id_cfop": "301",
+            "codigo_cfop": "5.904",
+            "desc_cfop": "Remessa para venda fora do estabelecimento"
+        },
+        {
+            "id_cfop": "302",
+            "codigo_cfop": "5.905",
+            "desc_cfop": "Remessa para dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "303",
+            "codigo_cfop": "5.906",
+            "desc_cfop": "Retorno de mercadoria depositada em dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "304",
+            "codigo_cfop": "5.907",
+            "desc_cfop": "Retorno simb\u00f3lico de mercadoria depositada em dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "305",
+            "codigo_cfop": "5.908",
+            "desc_cfop": "Remessa de bem por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "306",
+            "codigo_cfop": "5.909",
+            "desc_cfop": "Retorno de bem recebido por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "307",
+            "codigo_cfop": "5.910",
+            "desc_cfop": "Remessa em bonifica\u00e7\u00e3o, doa\u00e7\u00e3o ou brinde"
+        },
+        {
+            "id_cfop": "308",
+            "codigo_cfop": "5.911",
+            "desc_cfop": "Remessa de amostra gr\u00e1tis"
+        },
+        {
+            "id_cfop": "309",
+            "codigo_cfop": "5.912",
+            "desc_cfop": "Remessa de mercadoria ou bem para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "310",
+            "codigo_cfop": "5.913",
+            "desc_cfop": "Retorno de mercadoria ou bem recebido para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "311",
+            "codigo_cfop": "5.914",
+            "desc_cfop": "Remessa de mercadoria ou bem para exposi\u00e7\u00e3o ou feira"
+        },
+        {
+            "id_cfop": "312",
+            "codigo_cfop": "5.915",
+            "desc_cfop": "Remessa de mercadoria ou bem para conserto ou reparo"
+        },
+        {
+            "id_cfop": "313",
+            "codigo_cfop": "5.916",
+            "desc_cfop": "Retorno de mercadoria ou bem recebido para conserto ou reparo"
+        },
+        {
+            "id_cfop": "314",
+            "codigo_cfop": "5.917",
+            "desc_cfop": "Remessa de mercadoria em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "315",
+            "codigo_cfop": "5.918",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "316",
+            "codigo_cfop": "5.919",
+            "desc_cfop": "Devolu\u00e7\u00e3o simb\u00f3lica de mercadoria vendida ou utilizada em processo industrial, recebida anteriormente em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "317",
+            "codigo_cfop": "5.920",
+            "desc_cfop": "Remessa de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "318",
+            "codigo_cfop": "5.921",
+            "desc_cfop": "Devolu\u00e7\u00e3o de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "319",
+            "codigo_cfop": "5.922",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de simples faturamento decorrente de venda para entrega futura"
+        },
+        {
+            "id_cfop": "320",
+            "codigo_cfop": "5.923",
+            "desc_cfop": "Remessa de mercadoria por conta e ordem de terceiros, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "321",
+            "codigo_cfop": "5.924",
+            "desc_cfop": "Remessa para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria,"
+        },
+        {
+            "id_cfop": "322",
+            "codigo_cfop": "5.925",
+            "desc_cfop": "Retorno de mercadoria recebida para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando aquela n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "323",
+            "codigo_cfop": "5.926",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de reclassifica\u00e7\u00e3o de mercadoria decorrente de forma\u00e7\u00e3o de kit ou de sua desagrega\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "324",
+            "codigo_cfop": "5.927",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de baixa de estoque decorrente de perda, roubo ou deteriora\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "325",
+            "codigo_cfop": "5.928",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de baixa de estoque decorrente do encerramento da atividade da empresa"
+        },
+        {
+            "id_cfop": "326",
+            "codigo_cfop": "5.929",
+            "desc_cfop": "Lan\u00e7amento efetuado em decorr\u00eancia de emiss\u00e3o de documento fiscal relativo a opera\u00e7\u00e3o ou presta\u00e7\u00e3o tamb\u00e9m registrada em equipamento Emissor de Cupom Fiscal"
+        },
+        {
+            "id_cfop": "327",
+            "codigo_cfop": "5.931",
+            "desc_cfop": "Lan\u00e7amento efetuado em decorr\u00eancia da responsabilidade de reten\u00e7\u00e3o do imposto por substitui\u00e7\u00e3o tribut\u00e1ria, atribu\u00edda ao remetente ou alienante da mercadoria, pelo servi\u00e7o de transporte realizado por transportador aut\u00f4nomo ou por transportador n\u00e3o inscrito na unidade da Federa\u00e7\u00e3o onde iniciado o servi\u00e7o"
+        },
+        {
+            "id_cfop": "328",
+            "codigo_cfop": "5.932",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte iniciada em unidade da Federa\u00e7\u00e3o diversa daquela onde inscrito o prestador"
+        },
+        {
+            "id_cfop": "329",
+            "codigo_cfop": "5.949",
+            "desc_cfop": "Outra sa\u00edda de mercadoria ou presta\u00e7\u00e3o de servi\u00e7o n\u00e3o especificado"
+        },
+        {
+            "id_cfop": "330",
+            "codigo_cfop": "6.101",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "331",
+            "codigo_cfop": "6.102",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "332",
+            "codigo_cfop": "6.103",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento, efetuada fora do estabelecimento"
+        },
+        {
+            "id_cfop": "333",
+            "codigo_cfop": "6.104",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, efetuada fora do estabelecimento"
+        },
+        {
+            "id_cfop": "334",
+            "codigo_cfop": "6.105",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "335",
+            "codigo_cfop": "6.106",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "336",
+            "codigo_cfop": "6.107",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento, destinada a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "337",
+            "codigo_cfop": "6.108",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, destinada a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "338",
+            "codigo_cfop": "6.109",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "339",
+            "codigo_cfop": "6.110",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, destinada \u00e0 Zona Franca de Manaus ou \u00c1reas de Livre Com\u00e9rcio"
+        },
+        {
+            "id_cfop": "340",
+            "codigo_cfop": "6.111",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento remetida anteriormente em consigna\u00e7\u00e3o industrial"
+        },
+        {
+            "id_cfop": "341",
+            "codigo_cfop": "6.112",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de Terceiros remetida anteriormente em consigna\u00e7\u00e3o industrial"
+        },
+        {
+            "id_cfop": "342",
+            "codigo_cfop": "6.113",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento remetida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "343",
+            "codigo_cfop": "6.114",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros remetida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "344",
+            "codigo_cfop": "6.115",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, recebida anteriormente em consigna\u00e7\u00e3o mercantil"
+        },
+        {
+            "id_cfop": "345",
+            "codigo_cfop": "6.116",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento originada de encomenda para entrega futura"
+        },
+        {
+            "id_cfop": "346",
+            "codigo_cfop": "6.117",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, originada de encomenda para entrega futura"
+        },
+        {
+            "id_cfop": "347",
+            "codigo_cfop": "6.118",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento entregue ao destinat\u00e1rio por conta e ordem do adquirente origin\u00e1rio, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "348",
+            "codigo_cfop": "6.119",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinat\u00e1rio por conta e ordem do adquirente origin\u00e1rio, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "349",
+            "codigo_cfop": "6.120",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros entregue ao destinat\u00e1rio pelo vendedor remetente, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "350",
+            "codigo_cfop": "6.122",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento remetida para industrializa\u00e7\u00e3o, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "351",
+            "codigo_cfop": "6.123",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros remetida para industrializa\u00e7\u00e3o, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "352",
+            "codigo_cfop": "6.124",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada para outra empresa"
+        },
+        {
+            "id_cfop": "353",
+            "codigo_cfop": "6.125",
+            "desc_cfop": "Industrializa\u00e7\u00e3o efetuada para outra empresa quando a mercadoria recebida para utiliza\u00e7\u00e3o no processo de industrializa\u00e7\u00e3o n\u00e3o transitar pelo estabelecimento adquirente da mercadoria"
+        },
+        {
+            "id_cfop": "354",
+            "codigo_cfop": "6.151",
+            "desc_cfop": "Transfer\u00eancia de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "355",
+            "codigo_cfop": "6.152",
+            "desc_cfop": "Transfer\u00eancia de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "356",
+            "codigo_cfop": "6.153",
+            "desc_cfop": "Transfer\u00eancia de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "357",
+            "codigo_cfop": "6.155",
+            "desc_cfop": "Transfer\u00eancia de produ\u00e7\u00e3o do estabelecimento, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "358",
+            "codigo_cfop": "6.156",
+            "desc_cfop": "Transfer\u00eancia de mercadoria adquirida ou recebida de terceiros, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "359",
+            "codigo_cfop": "6.201",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "360",
+            "codigo_cfop": "6.202",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "361",
+            "codigo_cfop": "6.205",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo a aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "362",
+            "codigo_cfop": "6.206",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo a aquisi\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "363",
+            "codigo_cfop": "6.207",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 compra de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "364",
+            "codigo_cfop": "6.208",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida em transfer\u00eancia para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "365",
+            "codigo_cfop": "6.209",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida em transfer\u00eancia para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "366",
+            "codigo_cfop": "6.210",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "367",
+            "codigo_cfop": "6.251",
+            "desc_cfop": "Venda de energia el\u00e9trica para distribui\u00e7\u00e3o ou comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "368",
+            "codigo_cfop": "6.252",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento industrial"
+        },
+        {
+            "id_cfop": "369",
+            "codigo_cfop": "6.253",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento comercial"
+        },
+        {
+            "id_cfop": "370",
+            "codigo_cfop": "6.254",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "371",
+            "codigo_cfop": "6.255",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "372",
+            "codigo_cfop": "6.256",
+            "desc_cfop": "Venda de energia el\u00e9trica para estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "373",
+            "codigo_cfop": "6.257",
+            "desc_cfop": "Venda de energia el\u00e9trica para consumo por demanda contratada"
+        },
+        {
+            "id_cfop": "374",
+            "codigo_cfop": "6.258",
+            "desc_cfop": "Venda de energia el\u00e9trica a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "375",
+            "codigo_cfop": "6.301",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "376",
+            "codigo_cfop": "6.302",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento industrial"
+        },
+        {
+            "id_cfop": "377",
+            "codigo_cfop": "6.303",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento comercial"
+        },
+        {
+            "id_cfop": "378",
+            "codigo_cfop": "6.304",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento de prestador de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "379",
+            "codigo_cfop": "6.305",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "380",
+            "codigo_cfop": "6.306",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "381",
+            "codigo_cfop": "6.307",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "382",
+            "codigo_cfop": "6.351",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "383",
+            "codigo_cfop": "6.352",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento industrial"
+        },
+        {
+            "id_cfop": "384",
+            "codigo_cfop": "6.353",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento comercial"
+        },
+        {
+            "id_cfop": "385",
+            "codigo_cfop": "6.354",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento de prestador de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "386",
+            "codigo_cfop": "6.355",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento de geradora ou de distribuidora de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "387",
+            "codigo_cfop": "6.356",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a estabelecimento de produtor rural"
+        },
+        {
+            "id_cfop": "388",
+            "codigo_cfop": "6.357",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte a n\u00e3o contribuinte"
+        },
+        {
+            "id_cfop": "389",
+            "codigo_cfop": "6.401",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, na condi\u00e7\u00e3o de contribuinte substituto"
+        },
+        {
+            "id_cfop": "390",
+            "codigo_cfop": "6.402",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento de produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, em opera\u00e7\u00e3o entre contribuintes substitutos do mesmo produto"
+        },
+        {
+            "id_cfop": "391",
+            "codigo_cfop": "6.403",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, na condi\u00e7\u00e3o de contribuinte substituto"
+        },
+        {
+            "id_cfop": "392",
+            "codigo_cfop": "6.404",
+            "desc_cfop": "Venda de mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria, cujo imposto j\u00e1 tenha sido retido anteriormente"
+        },
+        {
+            "id_cfop": "393",
+            "codigo_cfop": "6.408",
+            "desc_cfop": "Transfer\u00eancia de produ\u00e7\u00e3o do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "394",
+            "codigo_cfop": "6.409",
+            "desc_cfop": "Transfer\u00eancia de mercadoria adquirida ou recebida de terceiros em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "395",
+            "codigo_cfop": "6.410",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para industrializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "396",
+            "codigo_cfop": "6.411",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para comercializa\u00e7\u00e3o em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "397",
+            "codigo_cfop": "6.412",
+            "desc_cfop": "Devolu\u00e7\u00e3o de bem do ativo imobilizado, em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "398",
+            "codigo_cfop": "6.413",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria destinada ao uso ou consumo, em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "399",
+            "codigo_cfop": "6.414",
+            "desc_cfop": "Remessa de produ\u00e7\u00e3o do estabelecimento para venda fora do estabelecimento em opera\u00e7\u00e3o com produto sujeito ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "400",
+            "codigo_cfop": "6.415",
+            "desc_cfop": "Remessa de mercadoria adquirida ou recebida de terceiros para venda fora do estabelecimento, em opera\u00e7\u00e3o com mercadoria sujeita ao regime de substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "401",
+            "codigo_cfop": "6.501",
+            "desc_cfop": "Remessa de produ\u00e7\u00e3o do estabelecimento, com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "402",
+            "codigo_cfop": "6.502",
+            "desc_cfop": "Remessa de mercadoria adquirida ou recebida de terceiros, com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "403",
+            "codigo_cfop": "6.503",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "404",
+            "codigo_cfop": "6.551",
+            "desc_cfop": "Venda de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "405",
+            "codigo_cfop": "6.552",
+            "desc_cfop": "Transfer\u00eancia de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "406",
+            "codigo_cfop": "6.553",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "407",
+            "codigo_cfop": "6.554",
+            "desc_cfop": "Remessa de bem do ativo imobilizado para uso fora do estabelecimento"
+        },
+        {
+            "id_cfop": "408",
+            "codigo_cfop": "6.555",
+            "desc_cfop": "Devolu\u00e7\u00e3o de bem do ativo imobilizado de terceiro, recebido para uso no estabelecimento"
+        },
+        {
+            "id_cfop": "409",
+            "codigo_cfop": "6.556",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra de material de uso ou consumo"
+        },
+        {
+            "id_cfop": "410",
+            "codigo_cfop": "6.557",
+            "desc_cfop": "Transfer\u00eancia de material de uso ou consumo"
+        },
+        {
+            "id_cfop": "411",
+            "codigo_cfop": "6.603",
+            "desc_cfop": "Ressarcimento de ICMS retido por substitui\u00e7\u00e3o tribut\u00e1ria"
+        },
+        {
+            "id_cfop": "412",
+            "codigo_cfop": "6.901",
+            "desc_cfop": "Remessa para industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "413",
+            "codigo_cfop": "6.902",
+            "desc_cfop": "Retorno de mercadoria utilizada na industrializa\u00e7\u00e3o por encomenda"
+        },
+        {
+            "id_cfop": "414",
+            "codigo_cfop": "6.903",
+            "desc_cfop": "Retorno de mercadoria recebida para industrializa\u00e7\u00e3o e n\u00e3o aplicada no referido processo"
+        },
+        {
+            "id_cfop": "415",
+            "codigo_cfop": "6.904",
+            "desc_cfop": "Remessa para venda fora do estabelecimento"
+        },
+        {
+            "id_cfop": "416",
+            "codigo_cfop": "6.905",
+            "desc_cfop": "Remessa para dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "417",
+            "codigo_cfop": "6.906",
+            "desc_cfop": "Retorno de mercadoria depositada em dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "418",
+            "codigo_cfop": "6.907",
+            "desc_cfop": "Retorno simb\u00f3lico de mercadoria depositada em dep\u00f3sito fechado ou armaz\u00e9m geral"
+        },
+        {
+            "id_cfop": "419",
+            "codigo_cfop": "6.908",
+            "desc_cfop": "Remessa de bem por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "420",
+            "codigo_cfop": "6.909",
+            "desc_cfop": "Retorno de bem recebido por conta de contrato de comodato"
+        },
+        {
+            "id_cfop": "421",
+            "codigo_cfop": "6.910",
+            "desc_cfop": "Remessa em bonifica\u00e7\u00e3o, doa\u00e7\u00e3o ou brinde"
+        },
+        {
+            "id_cfop": "422",
+            "codigo_cfop": "6.911",
+            "desc_cfop": "Remessa de amostra gr\u00e1tis"
+        },
+        {
+            "id_cfop": "423",
+            "codigo_cfop": "6.912",
+            "desc_cfop": "Remessa de mercadoria ou bem para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "424",
+            "codigo_cfop": "6.913",
+            "desc_cfop": "Retorno de mercadoria ou bem recebido para demonstra\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "425",
+            "codigo_cfop": "6.914",
+            "desc_cfop": "Remessa de mercadoria ou bem para exposi\u00e7\u00e3o ou feira"
+        },
+        {
+            "id_cfop": "426",
+            "codigo_cfop": "6.915",
+            "desc_cfop": "Remessa de mercadoria ou bem para conserto ou reparo"
+        },
+        {
+            "id_cfop": "427",
+            "codigo_cfop": "6.916",
+            "desc_cfop": "Retorno de mercadoria ou bem recebido para conserto ou reparo"
+        },
+        {
+            "id_cfop": "428",
+            "codigo_cfop": "6.917",
+            "desc_cfop": "Remessa de mercadoria em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "429",
+            "codigo_cfop": "6.918",
+            "desc_cfop": "Devolu\u00e7\u00e3o de mercadoria recebida em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "430",
+            "codigo_cfop": "6.919",
+            "desc_cfop": "Devolu\u00e7\u00e3o simb\u00f3lica de mercadoria vendida ou utilizada em processo industrial, recebida anteriormente em consigna\u00e7\u00e3o mercantil ou industrial"
+        },
+        {
+            "id_cfop": "431",
+            "codigo_cfop": "6.920",
+            "desc_cfop": "Remessa de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "432",
+            "codigo_cfop": "6.921",
+            "desc_cfop": "Devolu\u00e7\u00e3o de vasilhame ou sacaria"
+        },
+        {
+            "id_cfop": "433",
+            "codigo_cfop": "6.922",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de simples faturamento decorrente de venda para entrega futura"
+        },
+        {
+            "id_cfop": "434",
+            "codigo_cfop": "6.923",
+            "desc_cfop": "Remessa de mercadoria por conta e ordem de terceiros, em venda \u00e0 ordem"
+        },
+        {
+            "id_cfop": "435",
+            "codigo_cfop": "6.924",
+            "desc_cfop": "Remessa para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando esta n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "436",
+            "codigo_cfop": "6.925",
+            "desc_cfop": "Retorno de mercadoria recebida para industrializa\u00e7\u00e3o por conta e ordem do adquirente da mercadoria, quando aquela n\u00e3o transitar pelo estabelecimento do adquirente"
+        },
+        {
+            "id_cfop": "437",
+            "codigo_cfop": "6.929",
+            "desc_cfop": "Lan\u00e7amento efetuado em decorr\u00eancia de emiss\u00e3o de documento fiscal relativo a opera\u00e7\u00e3o ou presta\u00e7\u00e3o tamb\u00e9m registrada em equipamento Emissor de Cupom Fiscal"
+        },
+        {
+            "id_cfop": "438",
+            "codigo_cfop": "6.931",
+            "desc_cfop": "Lan\u00e7amento efetuado em decorr\u00eancia da responsabilidade de reten\u00e7\u00e3o do imposto por substitui\u00e7\u00e3o tribut\u00e1ria, atribu\u00edda ao remetente ou alienante da mercadoria, pelo servi\u00e7o de transporte realizado por transportador aut\u00f4nomo ou por transportador n\u00e3o inscrito na unidade da Federa\u00e7\u00e3o onde iniciado o servi\u00e7o"
+        },
+        {
+            "id_cfop": "439",
+            "codigo_cfop": "6.932",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte iniciada em unidade da Federa\u00e7\u00e3o diversa daquela onde inscrito o prestador"
+        },
+        {
+            "id_cfop": "440",
+            "codigo_cfop": "6.949",
+            "desc_cfop": "Outra sa\u00edda de mercadoria ou presta\u00e7\u00e3o de servi\u00e7o n\u00e3o especificado"
+        },
+        {
+            "id_cfop": "441",
+            "codigo_cfop": "7.101",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento"
+        },
+        {
+            "id_cfop": "442",
+            "codigo_cfop": "7.102",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros"
+        },
+        {
+            "id_cfop": "443",
+            "codigo_cfop": "7.105",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "444",
+            "codigo_cfop": "7.106",
+            "desc_cfop": "Venda de mercadoria adquirida ou recebida de terceiros, que n\u00e3o deva por ele transitar"
+        },
+        {
+            "id_cfop": "445",
+            "codigo_cfop": "7.127",
+            "desc_cfop": "Venda de produ\u00e7\u00e3o do estabelecimento sob o regime de \"drawback\""
+        },
+        {
+            "id_cfop": "446",
+            "codigo_cfop": "7.201",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para industrializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "447",
+            "codigo_cfop": "7.202",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para comercializa\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "448",
+            "codigo_cfop": "7.205",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 aquisi\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "449",
+            "codigo_cfop": "7.206",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo a aquisi\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "450",
+            "codigo_cfop": "7.207",
+            "desc_cfop": "Anula\u00e7\u00e3o de valor relativo \u00e0 compra de energia el\u00e9trica"
+        },
+        {
+            "id_cfop": "451",
+            "codigo_cfop": "7.210",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra para utiliza\u00e7\u00e3o na presta\u00e7\u00e3o de servi\u00e7o"
+        },
+        {
+            "id_cfop": "452",
+            "codigo_cfop": "7.211",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compras para industrializa\u00e7\u00e3o sob o regime de drawback\""
+        },
+        {
+            "id_cfop": "453",
+            "codigo_cfop": "7.251",
+            "desc_cfop": "Venda de energia el\u00e9trica para o exterior"
+        },
+        {
+            "id_cfop": "454",
+            "codigo_cfop": "7.301",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de comunica\u00e7\u00e3o para execu\u00e7\u00e3o de servi\u00e7o da mesma natureza"
+        },
+        {
+            "id_cfop": "455",
+            "codigo_cfop": "7.358",
+            "desc_cfop": "Presta\u00e7\u00e3o de servi\u00e7o de transporte"
+        },
+        {
+            "id_cfop": "456",
+            "codigo_cfop": "7.501",
+            "desc_cfop": "Exporta\u00e7\u00e3o de mercadorias recebidas com fim espec\u00edfico de exporta\u00e7\u00e3o"
+        },
+        {
+            "id_cfop": "457",
+            "codigo_cfop": "7.551",
+            "desc_cfop": "Venda de bem do ativo imobilizado"
+        },
+        {
+            "id_cfop": "458",
+            "codigo_cfop": "7.553",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra de bem para o ativo imobilizado"
+        },
+        {
+            "id_cfop": "459",
+            "codigo_cfop": "7.556",
+            "desc_cfop": "Devolu\u00e7\u00e3o de compra de material de uso ou consumo"
+        },
+        {
+            "id_cfop": "460",
+            "codigo_cfop": "7.930",
+            "desc_cfop": "Lan\u00e7amento efetuado a t\u00edtulo de devolu\u00e7\u00e3o de bem cuja entrada tenha ocorrido sob amparo de regime especial aduaneiro de admiss\u00e3o tempor\u00e1ria"
+        },
+        {
+            "id_cfop": "461",
+            "codigo_cfop": "7.949",
+            "desc_cfop": "Outra sa\u00edda de mercadoria ou presta\u00e7\u00e3o de servi\u00e7o n\u00e3o especificado"
+        }
+    ]
+}

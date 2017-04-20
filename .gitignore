@@ -1,0 +1,53 @@
+
+### Project ###
+index.php
+src/draft
+src/tests
+src/main/resource/cache/*
+app/cache/*
+!app/cache/.empty
+
+# Created by https://www.gitignore.io/api/symfony,netbeans,composer,wordpress
+
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Parameters
+#/app/config/parameters.yml
+#/app/config/parameters.ini
+
+# Managed by Composer
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/bin/*
+!bin/console
+!bin/symfony_requirements
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+# Backup entities generated with doctrine:generate:entities command
+**/Entity/*~
+
+tests/_output/*
